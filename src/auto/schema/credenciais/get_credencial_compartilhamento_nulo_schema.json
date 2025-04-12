@@ -1,0 +1,63 @@
+{
+    "$schema": "https://json-schema.org/draft/2019-09/schema",
+    "$id": "http://example.com/example.json",
+    "type": "object",
+    "default": {},
+    "title": "Root Schema",
+    "required": [
+        "Id",
+        "QtdSubmissions",
+        "StopShared",
+        "CredentialId",
+        "DateFinal"
+    ],
+    "properties": {
+        "Id": {
+            "type": "null",
+            "default": null,
+            "title": "The Id Schema",
+            "examples": [
+                null
+            ]
+        },
+        "QtdSubmissions": {
+            "type": "null",
+            "default": null,
+            "title": "The QtdSubmissions Schema",
+            "examples": [
+                null
+            ]
+        },
+        "StopShared": {
+            "type": "null",
+            "default": null,
+            "title": "The StopShared Schema",
+            "examples": [
+                null
+            ]
+        },
+        "CredentialId": {
+            "type": "null",
+            "default": null,
+            "title": "The CredentialId Schema",
+            "examples": [
+                null
+            ]
+        },
+        "DateFinal": {
+            "type": "null",
+            "default": null,
+            "title": "The DateFinal Schema",
+            "examples": [
+                null
+            ]
+        }
+    },
+    "examples": [{
+        "Id": null,
+        "QtdSubmissions": null,
+        "StopShared": null,
+        "CredentialId": null,
+        "DateFinal": null
+    }]
+}

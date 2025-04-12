@@ -1,0 +1,10 @@
+ENDPOINT_LOGS_LIST:
+  PARAMETER:
+    PAGE: 0
+    PAGE_EMPTY: EMPTY
+    PAGE_INVALID: abc
+    PAGE_MAIOR: 100
+    SIZE: 10
+    SIZE_EMPTY: EMPTY
+    SIZE_INVALID: abc
+  PATH: /api/v1/credentials/logs

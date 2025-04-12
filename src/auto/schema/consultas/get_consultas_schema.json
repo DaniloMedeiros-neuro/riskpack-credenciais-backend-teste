@@ -1,0 +1,140 @@
+{
+    "$schema": "https://json-schema.org/draft/2019-09/schema",
+    "$id": "http://example.com/example.json",
+    "type": "object",
+    "default": {},
+    "title": "Root Schema",
+    "required": [
+        "TotalElements",
+        "GatewayQueries"
+    ],
+    "properties": {
+        "TotalElements": {
+            "type": "integer",
+            "default": 0,
+            "title": "The TotalElements Schema",
+            "examples": [
+                41
+            ]
+        },
+        "GatewayQueries": {
+            "type": "array",
+            "default": [],
+            "title": "The GatewayQueries Schema",
+            "items": {
+                "type": "object",
+                "title": "A Schema",
+                "required": [
+                    "id",
+                    "queryName",
+                    "queryDescription",
+                    "queryVersion",
+                    "credentialCount",
+                    "longId"
+                ],
+                "properties": {
+                    "id": {
+                        "type": "string",
+                        "title": "The id Schema",
+                        "examples": [
+                            "2805466311225744",
+                            "2926018720910350"
+                        ]
+                    },
+                    "queryName": {
+                        "type": "string",
+                        "title": "The queryName Schema",
+                        "examples": [
+                            "SCHUMANNCALLBACK",
+                            "DOWJONESAUTHNTOKEN"
+                        ]
+                    },
+                    "queryDescription": {
+                        "type": "string",
+                        "title": "The queryDescription Schema",
+                        "examples": [
+                            "Consulta de callback da schumann",
+                            "Solicita os tokens em uma chamada ao servidor fornecendo o nome de usuario e a senha da conta"
+                        ]
+                    },
+                    "queryVersion": {
+                        "type": "string",
+                        "title": "The queryVersion Schema",
+                        "examples": [
+                            "v20210116",
+                            "v20221111"
+                        ]
+                    },
+                    "credentialCount": {
+                        "type": "integer",
+                        "title": "The credentialCount Schema",
+                        "examples": [
+                            0
+                        ]
+                    },
+                    "longId": {
+                        "type": "integer",
+                        "title": "The longId Schema",
+                        "examples": [
+                            2805466311225744,
+                            2926018720910350
+                        ]
+                    }
+                },
+                "examples": [{
+                    "id": "2805466311225744",
+                    "queryName": "SCHUMANNCALLBACK",
+                    "queryDescription": "Consulta de callback da schumann",
+                    "queryVersion": "v20210116",
+                    "credentialCount": 0,
+                    "longId": 2805466311225744
+                },
+                {
+                    "id": "2926018720910350",
+                    "queryName": "DOWJONESAUTHNTOKEN",
+                    "queryDescription": "Solicita os tokens em uma chamada ao servidor fornecendo o nome de usuario e a senha da conta",
+                    "queryVersion": "v20221111",
+                    "credentialCount": 0,
+                    "longId": 2926018720910350
+                }]
+            },
+            "examples": [
+                [{
+                    "id": "2805466311225744",
+                    "queryName": "SCHUMANNCALLBACK",
+                    "queryDescription": "Consulta de callback da schumann",
+                    "queryVersion": "v20210116",
+                    "credentialCount": 0,
+                    "longId": 2805466311225744
+                },
+                {
+                    "id": "2926018720910350",
+                    "queryName": "DOWJONESAUTHNTOKEN",
+                    "queryDescription": "Solicita os tokens em uma chamada ao servidor fornecendo o nome de usuario e a senha da conta",
+                    "queryVersion": "v20221111",
+                    "credentialCount": 0,
+                    "longId": 2926018720910350
+                }]
+            ]
+        }
+    },
+    "examples": [{
+        "TotalElements": 41,
+        "GatewayQueries": [{
+            "id": "2805466311225744",
+            "queryName": "SCHUMANNCALLBACK",
+            "queryDescription": "Consulta de callback da schumann",
+            "queryVersion": "v20210116",
+            "credentialCount": 0,
+            "longId": 2805466311225744
+        },
+        {
+            "id": "2926018720910350",
+            "queryName": "DOWJONESAUTHNTOKEN",
+            "queryDescription": "Solicita os tokens em uma chamada ao servidor fornecendo o nome de usuario e a senha da conta",
+            "queryVersion": "v20221111",
+            "credentialCount": 0,
+            "longId": 2926018720910350
+        }]
+    }]
+}

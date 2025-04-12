@@ -1,0 +1,377 @@
+BODY_LOGS_FILTER:
+  CONSULTA:
+    campo1:
+      nome: DateEnd
+      valor: ""
+    campo2:
+      nome: DateStart
+      valor: ""
+    campo3:
+      nome: Name
+      valor: ""
+    campo4:
+      nome: QueryName
+      valor: ABRTELECOM
+    campo5:
+      nome: Type
+      valor: []
+    campo6:
+      nome: UserName
+      valor: ""
+  CREDENCIAL:
+    campo1:
+      nome: DateEnd
+      valor: ""
+    campo2:
+      nome: DateStart
+      valor: ""
+    campo3:
+      nome: Name
+      valor: API
+    campo4:
+      nome: QueryName
+      valor: ""
+    campo5:
+      nome: Type
+      valor: []
+    campo6:
+      nome: UserName
+      valor: ""
+  USUARIO:
+    campo1:
+      nome: DateEnd
+      valor: ""
+    campo2:
+      nome: DateStart
+      valor: ""
+    campo3:
+      nome: Name
+      valor: ""
+    campo4:
+      nome: QueryName
+      valor: ""
+    campo5:
+      nome: Type
+      valor: []
+    campo6:
+      nome: UserName
+      valor: Thamires Ramos
+  ACAO_EDICAO:
+    campo1:
+      nome: DateEnd
+      valor: ""
+    campo2:
+      nome: DateStart
+      valor: ""
+    campo3:
+      nome: Name
+      valor: ""
+    campo4:
+      nome: QueryName
+      valor: ""
+    campo5:
+      nome: Type
+      valor: [Edição]
+    campo6:
+      nome: UserName
+      valor: ""
+  ACAO_PROMOCAO:
+    campo1:
+      nome: DateEnd
+      valor: ""
+    campo2:
+      nome: DateStart
+      valor: ""
+    campo3:
+      nome: Name
+      valor: ""
+    campo4:
+      nome: QueryName
+      valor: ""
+    campo5:
+      nome: Type
+      valor: [Promoção]
+    campo6:
+      nome: UserName
+      valor: ""
+  ACAO_CRIACAO:
+    campo1:
+      nome: DateEnd
+      valor: ""
+    campo2:
+      nome: DateStart
+      valor: ""
+    campo3:
+      nome: Name
+      valor: ""
+    campo4:
+      nome: QueryName
+      valor: ""
+    campo5:
+      nome: Type
+      valor: [Criação]
+    campo6:
+      nome: UserName
+      valor: ""
+  ACAO_EDICAO_DE_ENTRADA_E_VALORES:
+    campo1:
+      nome: DateEnd
+      valor: ""
+    campo2:
+      nome: DateStart
+      valor: ""
+    campo3:
+      nome: Name
+      valor: ""
+    campo4:
+      nome: QueryName
+      valor: ""
+    campo5:
+      nome: Type
+      valor: [Edição de Entradas e Valores]
+    campo6:
+      nome: UserName
+      valor: ""
+  ACAO_EXCLUSAO:
+    campo1:
+      nome: DateEnd
+      valor: ""
+    campo2:
+      nome: DateStart
+      valor: ""
+    campo3:
+      nome: Name
+      valor: ""
+    campo4:
+      nome: QueryName
+      valor: ""
+    campo5:
+      nome: Type
+      valor: [Exclusão]
+    campo6:
+      nome: UserName
+      valor: ""
+  ACAO_EDICAO_DE_VALORES:
+    campo1:
+      nome: DateEnd
+      valor: ""
+    campo2:
+      nome: DateStart
+      valor: ""
+    campo3:
+      nome: Name
+      valor: ""
+    campo4:
+      nome: QueryName
+      valor: ""
+    campo5:
+      nome: Type
+      valor: [Edição de Valores]
+    campo6:
+      nome: UserName
+      valor: ""
+  ACAO_INVALIDA:
+    campo1:
+      nome: DateEnd
+      valor: ""
+    campo2:
+      nome: DateStart
+      valor: ""
+    campo3:
+      nome: Name
+      valor: ""
+    campo4:
+      nome: QueryName
+      valor: ""
+    campo5:
+      nome: Type
+      valor: [Ação inválida]
+    campo6:
+      nome: UserName
+      valor: ""
+  ACOES:
+    campo1:
+      nome: DateEnd
+      valor: ""
+    campo2:
+      nome: DateStart
+      valor: ""
+    campo3:
+      nome: Name
+      valor: ""
+    campo4:
+      nome: QueryName
+      valor: ABRTELECOM
+    campo5:
+      nome: Type
+      valor: [Edição,Promoção]
+    campo6:
+      nome: UserName
+      valor: ""
+  INTERVALO_DATAS:
+    campo1:
+      nome: DateEnd
+      valor: "2024-09-11"
+    campo2:
+      nome: DateStart
+      valor: "2024-09-08"
+    campo3:
+      nome: Name
+      valor: ""
+    campo4:
+      nome: QueryName
+      valor: ""
+    campo5:
+      nome: Type
+      valor: []
+    campo6:
+      nome: UserName
+      valor: ""
+  INTERVALO_DATA_MESMO_DIA:
+    campo1:
+      nome: DateEnd
+      valor: "2024-09-20"
+    campo2:
+      nome: DateStart
+      valor: "2024-09-20"
+    campo3:
+      nome: Name
+      valor: ""
+    campo4:
+      nome: QueryName
+      valor: ""
+    campo5:
+      nome: Type
+      valor: []
+    campo6:
+      nome: UserName
+      valor: ""
+  DATA_INICIAL_MAIOR:
+    campo1:
+      nome: DateEnd
+      valor: "2024-09-11"
+    campo2:
+      nome: DateStart
+      valor: "2024-09-12"
+    campo3:
+      nome: Name
+      valor: ""
+    campo4:
+      nome: QueryName
+      valor: ""
+    campo5:
+      nome: Type
+      valor: []
+    campo6:
+      nome: UserName
+      valor: ""
+  APENAS_DATA_INICIAL:
+    campo1:
+      nome: DateEnd
+      valor: ""
+    campo2:
+      nome: DateStart
+      valor: "2024-09-08"
+    campo3:
+      nome: Name
+      valor: ""
+    campo4:
+      nome: QueryName
+      valor: ""
+    campo5:
+      nome: Type
+      valor: []
+    campo6:
+      nome: UserName
+      valor: ""
+  APENAS_DATA_FINAL:
+    campo1:
+      nome: DateEnd
+      valor: "2024-09-11"
+    campo2:
+      nome: DateStart
+      valor: ""
+    campo3:
+      nome: Name
+      valor: ""
+    campo4:
+      nome: QueryName
+      valor: ""
+    campo5:
+      nome: Type
+      valor: []
+    campo6:
+      nome: UserName
+      valor: ""
+  NENHUM_FILTRO:
+    campo1:
+      nome: DateEnd
+      valor: ""
+    campo2:
+      nome: DateStart
+      valor: ""
+    campo3:
+      nome: Name
+      valor: ""
+    campo4:
+      nome: QueryName
+      valor: ""
+    campo5:
+      nome: Type
+      valor: []
+    campo6:
+      nome: UserName
+      valor: ""
+  LOG_INEXISTENTE:
+    campo1:
+      nome: DateEnd
+      valor: "1999-01-01"
+    campo2:
+      nome: DateStart
+      valor: "1998-01-01"
+    campo3:
+      nome: Name
+      valor: "TESTE"
+    campo4:
+      nome: QueryName
+      valor: "TESTE"
+    campo5:
+      nome: Type
+      valor: [Edição]
+    campo6:
+      nome: UserName
+      valor: "TESTE"
+  TODOS_OS_FILTROS:
+    campo1:
+      nome: DateEnd
+      valor: "2024-09-10"
+    campo2:
+      nome: DateStart
+      valor: "2024-09-01"
+    campo3:
+      nome: Name
+      valor: "API"
+    campo4:
+      nome: QueryName
+      valor: "ABRTELECOM"
+    campo5:
+      nome: Type
+      valor: [Promoção,Edição]
+    campo6:
+      nome: UserName
+      valor: "Thamires Ramos"
+  SUCESSO:
+    DateEnd: "2024-09-10"
+    DateStart: "2024-09-01"
+    Name: API
+    QueryName: ABRTELECOM
+    Type:
+      - Promoção
+      - Edição
+    UserName: Thamires Ramos
+
+ENDPOINT_LOGS_FILTER:
+  PATH: /api/v1/credentials/logs?export=false
+  PARAMETER:
+    PAGE: 0
+    SIZE: 100

@@ -1,0 +1,166 @@
+{
+  "$schema": "https://json-schema.org/draft/2019-09/schema",
+  "$id": "http://example.com/example.json",
+  "type": "object",
+  "default": {},
+  "title": "Root Schema",
+  "required": [
+      "TotalElements",
+      "Logs"
+  ],
+  "properties": {
+      "TotalElements": {
+          "type": "string",
+          "default": "",
+          "title": "The TotalElements Schema",
+          "examples": [
+              "59"
+          ]
+      },
+      "Logs": {
+          "type": "array",
+          "default": [],
+          "title": "The Logs Schema",
+          "items": {
+              "type": "object",
+              "title": "A Schema",
+              "required": [
+                  "Type",
+                  "Name",
+                  "Detail",
+                  "Date",
+                  "QueryName",
+                  "UserName"
+              ],
+              "properties": {
+                  "Type": {
+                      "type": "string",
+                      "title": "The Type Schema",
+                      "examples": [
+                          "Promoção",
+                          "Edição"
+                      ]
+                  },
+                  "Name": {
+                      "type": "string",
+                      "title": "The Name Schema",
+                      "examples": [
+                          "API_FO2756688027050365",
+                          "API_GL5400074090080099",
+                          "API_GE75UT0002600805408009"
+                      ]
+                  },
+                  "Detail": {
+                      "type": "string",
+                      "title": "The Detail Schema",
+                      "examples": [
+                          "Novo Status: ACTIVE",
+                          "Novo Status: INACTIVE",
+                          "Nova Descrição: AUTOMAÇÃO_POSTMAN_API_IL1 edição log"
+                      ]
+                  },
+                  "Date": {
+                      "type": "string",
+                      "title": "The Date Schema",
+                      "examples": [
+                          "2024-09-06 17:38:35.0",
+                          "2024-09-06 17:39:56.0",
+                          "2024-09-06 17:43:24.0"
+                      ]
+                  },
+                  "QueryName": {
+                      "type": "string",
+                      "title": "The QueryName Schema",
+                      "examples": [
+                          "ABRTELECOM"
+                      ]
+                  },
+                  "UserName": {
+                      "type": "string",
+                      "title": "The UserName Schema",
+                      "examples": [
+                          "Thamires Ramos"
+                      ]
+                  }
+              },
+              "examples": [{
+                  "Type": "Promoção",
+                  "Name": "API_FO2756688027050365",
+                  "Detail": "Novo Status: ACTIVE",
+                  "Date": "2024-09-06 17:38:35.0",
+                  "QueryName": "ABRTELECOM",
+                  "UserName": "Thamires Ramos"
+              },
+              {
+                  "Type": "Promoção",
+                  "Name": "API_GL5400074090080099",
+                  "Detail": "Novo Status: INACTIVE",
+                  "Date": "2024-09-06 17:39:56.0",
+                  "QueryName": "ABRTELECOM",
+                  "UserName": "Thamires Ramos"
+              },
+              {
+                  "Type": "Edição",
+                  "Name": "API_GE75UT0002600805408009",
+                  "Detail": "Nova Descrição: AUTOMAÇÃO_POSTMAN_API_IL1 edição log",
+                  "Date": "2024-09-06 17:43:24.0",
+                  "QueryName": "ABRTELECOM",
+                  "UserName": "Thamires Ramos"
+              }]
+          },
+          "examples": [
+              [{
+                  "Type": "Promoção",
+                  "Name": "API_FO2756688027050365",
+                  "Detail": "Novo Status: ACTIVE",
+                  "Date": "2024-09-06 17:38:35.0",
+                  "QueryName": "ABRTELECOM",
+                  "UserName": "Thamires Ramos"
+              },
+              {
+                  "Type": "Promoção",
+                  "Name": "API_GL5400074090080099",
+                  "Detail": "Novo Status: INACTIVE",
+                  "Date": "2024-09-06 17:39:56.0",
+                  "QueryName": "ABRTELECOM",
+                  "UserName": "Thamires Ramos"
+              },
+              {
+                  "Type": "Edição",
+                  "Name": "API_GE75UT0002600805408009",
+                  "Detail": "Nova Descrição: AUTOMAÇÃO_POSTMAN_API_IL1 edição log",
+                  "Date": "2024-09-06 17:43:24.0",
+                  "QueryName": "ABRTELECOM",
+                  "UserName": "Thamires Ramos"
+              }]
+          ]
+      }
+  },
+  "examples": [{
+      "TotalElements": "59",
+      "Logs": [{
+          "Type": "Promoção",
+          "Name": "API_FO2756688027050365",
+          "Detail": "Novo Status: ACTIVE",
+          "Date": "2024-09-06 17:38:35.0",
+          "QueryName": "ABRTELECOM",
+          "UserName": "Thamires Ramos"
+      },
+      {
+          "Type": "Promoção",
+          "Name": "API_GL5400074090080099",
+          "Detail": "Novo Status: INACTIVE",
+          "Date": "2024-09-06 17:39:56.0",
+          "QueryName": "ABRTELECOM",
+          "UserName": "Thamires Ramos"
+      },
+      {
+          "Type": "Edição",
+          "Name": "API_GE75UT0002600805408009",
+          "Detail": "Nova Descrição: AUTOMAÇÃO_POSTMAN_API_IL1 edição log",
+          "Date": "2024-09-06 17:43:24.0",
+          "QueryName": "ABRTELECOM",
+          "UserName": "Thamires Ramos"
+      }]
+  }]
+}

@@ -1,0 +1,140 @@
+ENDPOINT_LOGIN:
+  PATH: /oauth/login
+  LOGIN_SUPER:
+    BODY_LOGIN:
+      login: "usuario_super_credenciais_autom@mailinator.com"
+      password: "Neurotech@123"
+    CHAVES:
+      CLIENTE_ID: 0f9f04b3658d4839bb9af23f82470dc3
+      CLIENTE_SECRET: 9bcd46c8beec42a9859e38e56e4cab47
+      # CLIENTE_ID: 127fc4c6c4964fa38299d0ebc88b50e8
+      # CLIENTE_SECRET: c82eee8c3fad4f29ba029cee585eafde
+    DADOS:
+      nome: "Usuário Super Automação Credencial"
+      accountNumber: 1
+  
+  LOGIN_SUPER_5_NAO_NEUROTECH:
+    BODY_LOGIN:
+      login: "usuario_super_credenciais_autom@mailinator.com"
+      password: "Neurotech@123"
+    CHAVES:
+      CLIENTE_ID: d766deda748744178cb92f3aa0c4ae59
+      CLIENTE_SECRET: 4cd79a37ecfe472fbcba9ba56f65ccb9
+      # CLIENTE_ID: 81c2f9f774434c04b8bb9d5d7e2b7cc1
+      # CLIENTE_SECRET: 6689c00b5b1946bd81abaf0a055b398b
+    DADOS:
+      nome: "Usuário Super Automação Credencial"
+      accountNumber: 5
+      
+  LOGIN_SUPER_654_NAO_NEUROTECH:
+    BODY_LOGIN:
+      login: "usuario_super_credenciais_autom@mailinator.com"
+      password: "Neurotech@123"
+    CHAVES:
+      CLIENTE_ID: b477917cf39e41a495917af35dcff002
+      CLIENTE_SECRET: 04243f486dd0401595d9a62d628737c2
+      # CLIENTE_ID: 36c7f1e4d3df483096547df40e8bc3ae
+      # CLIENTE_SECRET: 79ae764e39d540cbad1fd0399ab093fb
+    DADOS:
+      nome: "Usuário Super Automação Credencial"
+      accountNumber: 654
+
+  LOGIN_SUPER_999_NAO_NEUROTECH:
+    BODY_LOGIN:
+      login: "usuario_super_credenciais_autom@mailinator.com"
+      password: "Neurotech@123"
+    CHAVES:
+      CLIENTE_ID: 4e66baebbea74d45872442185a48073f
+      CLIENTE_SECRET: 3582f86cb1664ef08dbfe9535e10d755
+      # CLIENTE_ID: 4526e850d8d84fad8c44643849291857
+      # CLIENTE_SECRET: ab71b74b82a04a09827d802b5a557ff3
+    DADOS:
+      nome: "Usuário Super Automação Credencial"
+      accountNumber: 999
+
+  LOGIN_SUPER_1_NEUROTECH:
+    BODY_LOGIN:
+      login: "teste_credenciais@neurotech.com.br"
+      password: "Neurotech@123"
+    CHAVES:
+      CLIENTE_ID: 0f9f04b3658d4839bb9af23f82470dc3
+      CLIENTE_SECRET: 9bcd46c8beec42a9859e38e56e4cab47
+      # CLIENTE_ID: 127fc4c6c4964fa38299d0ebc88b50e8
+      # CLIENTE_SECRET: c82eee8c3fad4f29ba029cee585eafde
+    DADOS:
+      nome: "Usuário Teste Credenciais"
+      accountNumber: 1
+  
+  LOGIN_SUPER_NEUROTECH_999:
+    BODY_LOGIN:
+      login: "teste_credenciais@neurotech.com.br"
+      password: "Neurotech@123"
+    CHAVES:
+      CLIENTE_ID: 4e66baebbea74d45872442185a48073f
+      CLIENTE_SECRET: 3582f86cb1664ef08dbfe9535e10d755
+      # CLIENTE_ID: 4526e850d8d84fad8c44643849291857
+      # CLIENTE_SECRET: ab71b74b82a04a09827d802b5a557ff3
+    DADOS:
+      nome: "Usuário Teste Credenciais"
+      accountNumber: 999
+  
+  LOGIN_SUPER_HOMOL:
+    BODY_LOGIN:
+      login: "usuario_super_credenciais_autom@mailinator.com"
+      password: "Neurotech@123"
+    CHAVES:
+      CLIENTE_ID: 0f9f04b3658d4839bb9af23f82470dc3
+      CLIENTE_SECRET: 9bcd46c8beec42a9859e38e56e4cab47
+      # CLIENTE_ID: 127fc4c6c4964fa38299d0ebc88b50e8
+      # CLIENTE_SECRET: c82eee8c3fad4f29ba029cee585eafde
+
+  LOGIN_ADMIN:
+    BODY_LOGIN:
+      login: "usuario_adm_credenciais_autom@mailinator.com"
+      password: "Neurotech@123"
+    CHAVES:
+      CLIENTE_ID: 0f9f04b3658d4839bb9af23f82470dc3
+      CLIENTE_SECRET: 9bcd46c8beec42a9859e38e56e4cab47
+      # CLIENTE_ID: 127fc4c6c4964fa38299d0ebc88b50e8
+      # CLIENTE_SECRET: c82eee8c3fad4f29ba029cee585eafde
+    DADOS:
+      nome: "Usuário Admin Automação Credencial"
+      perfil: "Perfil Credenciais Admin Thamires"
+
+  LOGIN_BASIC:
+    BODY_LOGIN:
+      login: "usuario_basico_credenciais_autom@mailinator.com"
+      password: "Neurotech@123"
+    CHAVES:
+      CLIENTE_ID: 0f9f04b3658d4839bb9af23f82470dc3
+      CLIENTE_SECRET: 9bcd46c8beec42a9859e38e56e4cab47
+      # CLIENTE_ID: 127fc4c6c4964fa38299d0ebc88b50e8
+      # CLIENTE_SECRET: c82eee8c3fad4f29ba029cee585eafde
+    DADOS:
+      nome: "Usuário Básico Automação Credenciais"
+      perfil: "Perfil Básico Automação Credenciais"
+
+  LOGIN_BASIC_SEM_PERMISSAO_CREDENCIAIS:
+    BODY_LOGIN:
+      login: "usuario_sem_acesso_credenciais@mailinator.com"
+      password: "Neurotech@123"
+    CHAVES:
+      CLIENTE_ID: 0f9f04b3658d4839bb9af23f82470dc3
+      CLIENTE_SECRET: 9bcd46c8beec42a9859e38e56e4cab47
+      # CLIENTE_ID: 127fc4c6c4964fa38299d0ebc88b50e8
+      # CLIENTE_SECRET: c82eee8c3fad4f29ba029cee585eafde
+    DADOS:
+      nome: "Usuário Sem Acesso Automação Credenciais"
+      perfil: "Perfil sem acesso Credenciais"
+
+  LOGIN_ADMIN_CONTA_654:
+    BODY_LOGIN:
+      login: "usuario_adm_credenciais_autom_654@mailinator.com"
+      password: "Neurotech@123"
+    CHAVES:
+      CLIENTE_ID: b477917cf39e41a495917af35dcff002
+      CLIENTE_SECRET: 04243f486dd0401595d9a62d628737c2
+      # CLIENTE_ID: 36c7f1e4d3df483096547df40e8bc3ae
+      # CLIENTE_SECRET: 79ae764e39d540cbad1fd0399ab093fb
+    DADOS:
+      nome: "Usuário Admin Automação Credencial 654"

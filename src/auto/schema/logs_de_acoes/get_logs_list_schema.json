@@ -1,0 +1,351 @@
+{
+    "$schema": "https://json-schema.org/draft/2019-09/schema",
+    "$id": "http://example.com/example.json",
+    "type": "object",
+    "default": {},
+    "title": "Root Schema",
+    "required": [
+        "TotalElements",
+        "Logs"
+    ],
+    "properties": {
+        "TotalElements": {
+            "type": "string",
+            "default": "",
+            "title": "The TotalElements Schema",
+            "examples": [
+                "201"
+            ]
+        },
+        "Logs": {
+            "type": "array",
+            "default": [],
+            "title": "The Logs Schema",
+            "items": {
+                "type": "object",
+                "title": "A Schema",
+                "required": [
+                    "Type",
+                    "Name",
+                    "Detail",
+                    "Date",
+                    "QueryName",
+                    "UserName"
+                ],
+                "properties": {
+                    "Type": {
+                        "type": "string",
+                        "title": "The Type Schema",
+                        "examples": [
+                            "Edição",
+                            "Exclusão",
+                            "Promoção",
+                            "Criação"
+                        ]
+                    },
+                    "Name": {
+                        "type": "string",
+                        "title": "The Name Schema",
+                        "examples": [
+                            "TESTE_GATEWAY",
+                            "SEM_CPF",
+                            "CPF_PADRAO",
+                            "CREDENCIAL_ENGANO",
+                            "CREDENCIAL_ENGANO_ATIVADA",
+                            "TESTE_EXCLUIR_2"
+                        ]
+                    },
+                    "Detail": {
+                        "type": "string",
+                        "title": "The Detail Schema",
+                        "examples": [
+                            "Novo Status: INACTIVE",
+                            "Novo Status: ACTIVE",
+                            "",
+                            "Promovida Para o Ambiente"
+                        ]
+                    },
+                    "Date": {
+                        "type": "string",
+                        "title": "The Date Schema",
+                        "examples": [
+                            "2024-09-11 12:14:02.0",
+                            "2024-09-11 12:14:13.0",
+                            "2024-09-11 19:48:47.0",
+                            "2024-09-11 19:49:20.0",
+                            "2024-09-11 19:50:21.0",
+                            "2024-09-11 19:50:29.0",
+                            "2024-09-11 19:50:49.0",
+                            "2024-09-11 19:50:53.0",
+                            "2024-09-11 19:50:59.0",
+                            "2024-09-12 17:58:39.0"
+                        ]
+                    },
+                    "QueryName": {
+                        "type": "string",
+                        "title": "The QueryName Schema",
+                        "examples": [
+                            "CORREIOS",
+                            "RFPFIMG",
+                            "ABRTELECOM"
+                        ]
+                    },
+                    "UserName": {
+                        "type": "string",
+                        "title": "The UserName Schema",
+                        "examples": [
+                            "Sóstenes Barros",
+                            "Kresller Silva",
+                            "Hildermir"
+                        ]
+                    }
+                },
+                "examples": [{
+                    "Type": "Edição",
+                    "Name": "TESTE_GATEWAY",
+                    "Detail": "Novo Status: INACTIVE",
+                    "Date": "2024-09-11 12:14:02.0",
+                    "QueryName": "CORREIOS",
+                    "UserName": "Sóstenes Barros"
+                },
+                {
+                    "Type": "Edição",
+                    "Name": "TESTE_GATEWAY",
+                    "Detail": "Novo Status: ACTIVE",
+                    "Date": "2024-09-11 12:14:13.0",
+                    "QueryName": "CORREIOS",
+                    "UserName": "Sóstenes Barros"
+                },
+                {
+                    "Type": "Exclusão",
+                    "Name": "SEM_CPF",
+                    "Detail": "",
+                    "Date": "2024-09-11 19:48:47.0",
+                    "QueryName": "RFPFIMG",
+                    "UserName": "Kresller Silva"
+                },
+                {
+                    "Type": "Promoção",
+                    "Name": "CPF_PADRAO",
+                    "Detail": "Promovida Para o Ambiente",
+                    "Date": "2024-09-11 19:49:20.0",
+                    "QueryName": "RFPFIMG",
+                    "UserName": "Kresller Silva"
+                },
+                {
+                    "Type": "Criação",
+                    "Name": "CREDENCIAL_ENGANO",
+                    "Detail": "",
+                    "Date": "2024-09-11 19:50:21.0",
+                    "QueryName": "RFPFIMG",
+                    "UserName": "Kresller Silva"
+                },
+                {
+                    "Type": "Exclusão",
+                    "Name": "CREDENCIAL_ENGANO",
+                    "Detail": "",
+                    "Date": "2024-09-11 19:50:29.0",
+                    "QueryName": "RFPFIMG",
+                    "UserName": "Kresller Silva"
+                },
+                {
+                    "Type": "Criação",
+                    "Name": "CREDENCIAL_ENGANO_ATIVADA",
+                    "Detail": "",
+                    "Date": "2024-09-11 19:50:49.0",
+                    "QueryName": "RFPFIMG",
+                    "UserName": "Kresller Silva"
+                },
+                {
+                    "Type": "Edição",
+                    "Name": "CREDENCIAL_ENGANO_ATIVADA",
+                    "Detail": "Novo Status: ACTIVE",
+                    "Date": "2024-09-11 19:50:53.0",
+                    "QueryName": "RFPFIMG",
+                    "UserName": "Kresller Silva"
+                },
+                {
+                    "Type": "Edição",
+                    "Name": "CREDENCIAL_ENGANO_ATIVADA",
+                    "Detail": "Novo Status: INACTIVE",
+                    "Date": "2024-09-11 19:50:59.0",
+                    "QueryName": "RFPFIMG",
+                    "UserName": "Kresller Silva"
+                },
+                {
+                    "Type": "Criação",
+                    "Name": "TESTE_EXCLUIR_2",
+                    "Detail": "",
+                    "Date": "2024-09-12 17:58:39.0",
+                    "QueryName": "ABRTELECOM",
+                    "UserName": "Hildermir"
+                }]
+            },
+            "examples": [
+                [{
+                    "Type": "Edição",
+                    "Name": "TESTE_GATEWAY",
+                    "Detail": "Novo Status: INACTIVE",
+                    "Date": "2024-09-11 12:14:02.0",
+                    "QueryName": "CORREIOS",
+                    "UserName": "Sóstenes Barros"
+                },
+                {
+                    "Type": "Edição",
+                    "Name": "TESTE_GATEWAY",
+                    "Detail": "Novo Status: ACTIVE",
+                    "Date": "2024-09-11 12:14:13.0",
+                    "QueryName": "CORREIOS",
+                    "UserName": "Sóstenes Barros"
+                },
+                {
+                    "Type": "Exclusão",
+                    "Name": "SEM_CPF",
+                    "Detail": "",
+                    "Date": "2024-09-11 19:48:47.0",
+                    "QueryName": "RFPFIMG",
+                    "UserName": "Kresller Silva"
+                },
+                {
+                    "Type": "Promoção",
+                    "Name": "CPF_PADRAO",
+                    "Detail": "Promovida Para o Ambiente",
+                    "Date": "2024-09-11 19:49:20.0",
+                    "QueryName": "RFPFIMG",
+                    "UserName": "Kresller Silva"
+                },
+                {
+                    "Type": "Criação",
+                    "Name": "CREDENCIAL_ENGANO",
+                    "Detail": "",
+                    "Date": "2024-09-11 19:50:21.0",
+                    "QueryName": "RFPFIMG",
+                    "UserName": "Kresller Silva"
+                },
+                {
+                    "Type": "Exclusão",
+                    "Name": "CREDENCIAL_ENGANO",
+                    "Detail": "",
+                    "Date": "2024-09-11 19:50:29.0",
+                    "QueryName": "RFPFIMG",
+                    "UserName": "Kresller Silva"
+                },
+                {
+                    "Type": "Criação",
+                    "Name": "CREDENCIAL_ENGANO_ATIVADA",
+                    "Detail": "",
+                    "Date": "2024-09-11 19:50:49.0",
+                    "QueryName": "RFPFIMG",
+                    "UserName": "Kresller Silva"
+                },
+                {
+                    "Type": "Edição",
+                    "Name": "CREDENCIAL_ENGANO_ATIVADA",
+                    "Detail": "Novo Status: ACTIVE",
+                    "Date": "2024-09-11 19:50:53.0",
+                    "QueryName": "RFPFIMG",
+                    "UserName": "Kresller Silva"
+                },
+                {
+                    "Type": "Edição",
+                    "Name": "CREDENCIAL_ENGANO_ATIVADA",
+                    "Detail": "Novo Status: INACTIVE",
+                    "Date": "2024-09-11 19:50:59.0",
+                    "QueryName": "RFPFIMG",
+                    "UserName": "Kresller Silva"
+                },
+                {
+                    "Type": "Criação",
+                    "Name": "TESTE_EXCLUIR_2",
+                    "Detail": "",
+                    "Date": "2024-09-12 17:58:39.0",
+                    "QueryName": "ABRTELECOM",
+                    "UserName": "Hildermir"
+                }]
+            ]
+        }
+    },
+    "examples": [{
+        "TotalElements": "201",
+        "Logs": [{
+            "Type": "Edição",
+            "Name": "TESTE_GATEWAY",
+            "Detail": "Novo Status: INACTIVE",
+            "Date": "2024-09-11 12:14:02.0",
+            "QueryName": "CORREIOS",
+            "UserName": "Sóstenes Barros"
+        },
+        {
+            "Type": "Edição",
+            "Name": "TESTE_GATEWAY",
+            "Detail": "Novo Status: ACTIVE",
+            "Date": "2024-09-11 12:14:13.0",
+            "QueryName": "CORREIOS",
+            "UserName": "Sóstenes Barros"
+        },
+        {
+            "Type": "Exclusão",
+            "Name": "SEM_CPF",
+            "Detail": "",
+            "Date": "2024-09-11 19:48:47.0",
+            "QueryName": "RFPFIMG",
+            "UserName": "Kresller Silva"
+        },
+        {
+            "Type": "Promoção",
+            "Name": "CPF_PADRAO",
+            "Detail": "Promovida Para o Ambiente",
+            "Date": "2024-09-11 19:49:20.0",
+            "QueryName": "RFPFIMG",
+            "UserName": "Kresller Silva"
+        },
+        {
+            "Type": "Criação",
+            "Name": "CREDENCIAL_ENGANO",
+            "Detail": "",
+            "Date": "2024-09-11 19:50:21.0",
+            "QueryName": "RFPFIMG",
+            "UserName": "Kresller Silva"
+        },
+        {
+            "Type": "Exclusão",
+            "Name": "CREDENCIAL_ENGANO",
+            "Detail": "",
+            "Date": "2024-09-11 19:50:29.0",
+            "QueryName": "RFPFIMG",
+            "UserName": "Kresller Silva"
+        },
+        {
+            "Type": "Criação",
+            "Name": "CREDENCIAL_ENGANO_ATIVADA",
+            "Detail": "",
+            "Date": "2024-09-11 19:50:49.0",
+            "QueryName": "RFPFIMG",
+            "UserName": "Kresller Silva"
+        },
+        {
+            "Type": "Edição",
+            "Name": "CREDENCIAL_ENGANO_ATIVADA",
+            "Detail": "Novo Status: ACTIVE",
+            "Date": "2024-09-11 19:50:53.0",
+            "QueryName": "RFPFIMG",
+            "UserName": "Kresller Silva"
+        },
+        {
+            "Type": "Edição",
+            "Name": "CREDENCIAL_ENGANO_ATIVADA",
+            "Detail": "Novo Status: INACTIVE",
+            "Date": "2024-09-11 19:50:59.0",
+            "QueryName": "RFPFIMG",
+            "UserName": "Kresller Silva"
+        },
+        {
+            "Type": "Criação",
+            "Name": "TESTE_EXCLUIR_2",
+            "Detail": "",
+            "Date": "2024-09-12 17:58:39.0",
+            "QueryName": "ABRTELECOM",
+            "UserName": "Hildermir"
+        }]
+    }]
+}

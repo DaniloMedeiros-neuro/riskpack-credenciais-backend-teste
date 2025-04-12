@@ -1,0 +1,156 @@
+{
+    "$schema": "https://json-schema.org/draft/2019-09/schema",
+    "$id": "http://example.com/example.json",
+    "type": "object",
+    "default": {},
+    "title": "Root Schema",
+    "required": [
+        "Id",
+        "Name",
+        "Description",
+        "Status",
+        "CreatedBy",
+        "Created",
+        "UpdatedBy",
+        "Updated",
+        "CreateUserName",
+        "UpdateUserName",
+        "Inputs"
+    ],
+    "properties": {
+        "Id": {
+            "type": "string",
+            "default": "",
+            "title": "The Id Schema",
+            "examples": [
+                "3051877238711240"
+            ]
+        },
+        "Name": {
+            "type": "string",
+            "default": "",
+            "title": "The Name Schema",
+            "examples": [
+                "PT18001200060209660050474"
+            ]
+        },
+        "Description": {
+            "type": "string",
+            "default": "",
+            "title": "The Description Schema",
+            "examples": [
+                "BE55056207102002"
+            ]
+        },
+        "Status": {
+            "type": "string",
+            "default": "",
+            "title": "The Status Schema",
+            "examples": [
+                "INACTIVE"
+            ]
+        },
+        "CreatedBy": {
+            "type": "string",
+            "default": "",
+            "title": "The CreatedBy Schema",
+            "examples": [
+                "thamires.ramos@ilabqa.com"
+            ]
+        },
+        "Created": {
+            "type": "string",
+            "default": "",
+            "title": "The Created Schema",
+            "examples": [
+                "2024-07-31T17:29:49.969801"
+            ]
+        },
+        "UpdatedBy": {
+            "type": "string",
+            "default": "",
+            "title": "The UpdatedBy Schema",
+            "examples": [
+                "thamires.ramos@ilabqa.com"
+            ]
+        },
+        "Updated": {
+            "type": "string",
+            "default": "",
+            "title": "The Updated Schema",
+            "examples": [
+                "2024-07-31T17:29:49.998716"
+            ]
+        },
+        "CreateUserName": {
+            "type": "string",
+            "default": "",
+            "title": "The CreateUserName Schema",
+            "examples": [
+                "Thamires Ramos"
+            ]
+        },
+        "UpdateUserName": {
+            "type": "string",
+            "default": "",
+            "title": "The UpdateUserName Schema",
+            "examples": [
+                "Thamires Ramos"
+            ]
+        },
+        "Inputs": {
+            "type": "array",
+            "default": [],
+            "title": "The Inputs Schema",
+            "items": {
+                "type": "object",
+                "title": "A Schema",
+                "required": [
+                    "Name"
+                ],
+                "properties": {
+                    "Name": {
+                        "type": "string",
+                        "title": "The Name Schema",
+                        "examples": [
+                            "telefone",
+                            "ddd"
+                        ]
+                    }
+                },
+                "examples": [{
+                    "Name": "telefone"
+                },
+                {
+                    "Name": "ddd"
+                }]
+            },
+            "examples": [
+                [{
+                    "Name": "telefone"
+                },
+                {
+                    "Name": "ddd"
+                }]
+            ]
+        }
+    },
+    "examples": [{
+        "Id": "3051877238711240",
+        "Name": "PT18001200060209660050474",
+        "Description": "BE55056207102002",
+        "Status": "INACTIVE",
+        "CreatedBy": "thamires.ramos@ilabqa.com",
+        "Created": "2024-07-31T17:29:49.969801",
+        "UpdatedBy": "thamires.ramos@ilabqa.com",
+        "Updated": "2024-07-31T17:29:49.998716",
+        "CreateUserName": "Thamires Ramos",
+        "UpdateUserName": "Thamires Ramos",
+        "Inputs": [{
+            "Name": "telefone"
+        },
+        {
+            "Name": "ddd"
+        }]
+    }]
+}

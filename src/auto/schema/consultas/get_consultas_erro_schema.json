@@ -1,0 +1,53 @@
+{
+    "$schema": "https://json-schema.org/draft/2019-09/schema",
+    "$id": "http://example.com/example.json",
+    "type": "object",
+    "default": {},
+    "title": "Root Schema",
+    "required": [
+        "timestamp",
+        "status",
+        "error",
+        "path"
+    ],
+    "properties": {
+        "timestamp": {
+            "type": "string",
+            "default": "",
+            "title": "The timestamp Schema",
+            "examples": [
+                "2014-04-11T23:29:54.363+00:00"
+            ]
+        },
+        "status": {
+            "type": "integer",
+            "default": 0,
+            "title": "The status Schema",
+            "examples": [
+                400
+            ]
+        },
+        "error": {
+            "type": "string",
+            "default": "",
+            "title": "The error Schema",
+            "examples": [
+                "Bad Request"
+            ]
+        },
+        "path": {
+            "type": "string",
+            "default": "",
+            "title": "The path Schema",
+            "examples": [
+                "/api/v1/gateway/query"
+            ]
+        }
+    },
+    "examples": [{
+        "timestamp": "2014-04-11T23:29:54.363+00:00",
+        "status": 400,
+        "error": "Bad Request",
+        "path": "/api/v1/gateway/query"
+    }]
+}

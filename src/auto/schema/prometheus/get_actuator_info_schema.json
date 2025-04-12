@@ -1,0 +1,82 @@
+{
+    "$schema": "https://json-schema.org/draft/2019-09/schema",
+    "$id": "http://example.com/example.json",
+    "type": "object",
+    "default": {},
+    "title": "Root Schema",
+    "required": [
+        "build"
+    ],
+    "properties": {
+        "build": {
+            "type": "object",
+            "default": {},
+            "title": "The build Schema",
+            "required": [
+                "artifact",
+                "name",
+                "time",
+                "version",
+                "group"
+            ],
+            "properties": {
+                "artifact": {
+                    "type": "string",
+                    "default": "",
+                    "title": "The artifact Schema",
+                    "examples": [
+                        "riskpack-credentials"
+                    ]
+                },
+                "name": {
+                    "type": "string",
+                    "default": "",
+                    "title": "The name Schema",
+                    "examples": [
+                        "riskpack-credentials"
+                    ]
+                },
+                "time": {
+                    "type": "string",
+                    "default": "",
+                    "title": "The time Schema",
+                    "examples": [
+                        "2024-11-22T14:50:59.700Z"
+                    ]
+                },
+                "version": {
+                    "type": "string",
+                    "default": "",
+                    "title": "The version Schema",
+                    "examples": [
+                        "2024.11.04.144953"
+                    ]
+                },
+                "group": {
+                    "type": "string",
+                    "default": "",
+                    "title": "The group Schema",
+                    "examples": [
+                        "br.com.neurotech.riskpack"
+                    ]
+                }
+            },
+            "examples": [{
+                "artifact": "riskpack-credentials",
+                "name": "riskpack-credentials",
+                "time": "2024-11-22T14:50:59.700Z",
+                "version": "2024.11.04.144953",
+                "group": "br.com.neurotech.riskpack"
+            }]
+        }
+    },
+    "examples": [{
+        "build": {
+            "artifact": "riskpack-credentials",
+            "name": "riskpack-credentials",
+            "time": "2024-11-22T14:50:59.700Z",
+            "version": "2024.11.04.144953",
+            "group": "br.com.neurotech.riskpack"
+        }
+    }]
+}

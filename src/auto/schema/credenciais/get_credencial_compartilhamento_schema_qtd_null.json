@@ -1,0 +1,63 @@
+{
+    "$schema": "https://json-schema.org/draft/2019-09/schema",
+    "$id": "http://example.com/example.json",
+    "type": "object",
+    "default": {},
+    "title": "Root Schema",
+    "required": [
+        "Id",
+        "QtdSubmissions",
+        "StopShared",
+        "CredentialId",
+        "DateFinal"
+    ],
+    "properties": {
+        "Id": {
+            "type": "integer",
+            "default": 0,
+            "title": "The Id Schema",
+            "examples": [
+                111
+            ]
+        },
+        "QtdSubmissions": {
+            "type": "null",
+            "default": null,
+            "title": "The QtdSubmissions Schema",
+            "examples": [
+                null
+            ]
+        },
+        "StopShared": {
+            "type": "string",
+            "default": "",
+            "title": "The StopShared Schema",
+            "examples": [
+                "false"
+            ]
+        },
+        "CredentialId": {
+            "type": "integer",
+            "default": 0,
+            "title": "The CredentialId Schema",
+            "examples": [
+                3869649811178798
+            ]
+        },
+        "DateFinal": {
+            "type": "string",
+            "default": "",
+            "title": "The DateFinal Schema",
+            "examples": [
+                "2025-03-30"
+            ]
+        }
+    },
+    "examples": [{
+        "Id": 111,
+        "QtdSubmissions": null,
+        "StopShared": "false",
+        "CredentialId": 3869649811178798,
+        "DateFinal": "2025-03-30"
+    }]
+}

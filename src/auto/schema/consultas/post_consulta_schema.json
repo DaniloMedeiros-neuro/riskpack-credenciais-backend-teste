@@ -1,0 +1,73 @@
+{
+    "$schema": "https://json-schema.org/draft/2019-09/schema",
+    "$id": "http://example.com/example.json",
+    "type": "object",
+    "default": {},
+    "title": "Root Schema",
+    "required": [
+        "id",
+        "queryName",
+        "queryDescription",
+        "queryVersion",
+        "credentialCount",
+        "longId"
+    ],
+    "properties": {
+        "id": {
+            "type": "string",
+            "default": "",
+            "title": "The id Schema",
+            "examples": [
+                "4102431945472440"
+            ]
+        },
+        "queryName": {
+            "type": "string",
+            "default": "",
+            "title": "The queryName Schema",
+            "examples": [
+                "BOAVISTAACERTAESSENCIALBTOR"
+            ]
+        },
+        "queryDescription": {
+            "type": "string",
+            "default": "",
+            "title": "The queryDescription Schema",
+            "examples": [
+                "Boa Vista Acerta Essencial"
+            ]
+        },
+        "queryVersion": {
+            "type": "string",
+            "default": "",
+            "title": "The queryVersion Schema",
+            "examples": [
+                "v20210928"
+            ]
+        },
+        "credentialCount": {
+            "type": "integer",
+            "default": 0,
+            "title": "The credentialCount Schema",
+            "examples": [
+                0
+            ]
+        },
+        "longId": {
+            "type": "integer",
+            "default": 0,
+            "title": "The longId Schema",
+            "examples": [
+                4102431945472440
+            ]
+        }
+    },
+    "examples": [{
+        "id": "4102431945472440",
+        "queryName": "BOAVISTAACERTAESSENCIALBTOR",
+        "queryDescription": "Boa Vista Acerta Essencial",
+        "queryVersion": "v20210928",
+        "credentialCount": 0,
+        "longId": 4102431945472440
+    }]
+}

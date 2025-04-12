@@ -1,0 +1,473 @@
+{
+    "$schema": "https://json-schema.org/draft/2019-09/schema",
+    "$id": "http://example.com/example.json",
+    "type": "object",
+    "default": {},
+    "title": "Root Schema",
+    "required": [
+        "TotalElements",
+        "CredentialsList"
+    ],
+    "properties": {
+        "TotalElements": {
+            "type": "integer",
+            "default": 0,
+            "title": "The TotalElements Schema",
+            "examples": [
+                162
+            ]
+        },
+        "CredentialsList": {
+            "type": "array",
+            "default": [],
+            "title": "The CredentialsList Schema",
+            "items": {
+                "type": "object",
+                "title": "A Schema",
+                "required": [
+                    "Id",
+                    "Name",
+                    "Description",
+                    "Status",
+                    "CreatedBy",
+                    "Created",
+                    "UpdatedBy",
+                    "Updated",
+                    "CreateUserName",
+                    "UpdateUserName",
+                    "Inputs",
+                    "InativatedDate",
+                    "CanDelete"
+                ],
+                "properties": {
+                    "Id": {
+                        "type": "string",
+                        "title": "The Id Schema",
+                        "examples": [
+                            "6643235945352591",
+                            "3844358645643898",
+                            "4913222109853697",
+                            "5409980716923051"
+                        ]
+                    },
+                    "Name": {
+                        "type": "string",
+                        "title": "The Name Schema",
+                        "examples": [
+                            "AE979604304001601908006",
+                            "AL9720400099D469Y3MN45481Y31",
+                            "ALTURA",
+                            "ALTURA2"
+                        ]
+                    },
+                    "Description": {
+                        "type": "string",
+                        "title": "The Description Schema",
+                        "examples": [
+                            "MU44XBMX5546021376034500466GMH",
+                            "Quidem et nemo dolor rem animi",
+                            "Altura 1",
+                            "Altura 2"
+                        ]
+                    },
+                    "Status": {
+                        "type": "string",
+                        "title": "The Status Schema",
+                        "examples": [
+                            "INACTIVE"
+                        ]
+                    },
+                    "CreatedBy": {
+                        "type": "string",
+                        "title": "The CreatedBy Schema",
+                        "examples": [
+                            "thamires.ramos@ilabqa.com",
+                            "fagner.coloia@fastsolucoes.com.br"
+                        ]
+                    },
+                    "Created": {
+                        "type": "string",
+                        "title": "The Created Schema",
+                        "examples": [
+                            "2024-07-31T17:29:55.224473",
+                            "2024-08-26T22:07:25.937991",
+                            "2024-08-16T18:54:33.041557",
+                            "2024-08-23T18:44:41.98051"
+                        ]
+                    },
+                    "UpdatedBy": {
+                        "type": "string",
+                        "title": "The UpdatedBy Schema",
+                        "examples": [
+                            "thamires.ramos@ilabqa.com",
+                            "fagner.coloia@fastsolucoes.com.br"
+                        ]
+                    },
+                    "Updated": {
+                        "type": "string",
+                        "title": "The Updated Schema",
+                        "examples": [
+                            "2024-07-31T17:29:55.255075",
+                            "2024-08-26T22:28:17.186012",
+                            "2024-08-27T19:36:47.675716",
+                            "2024-08-23T18:44:42.014234"
+                        ]
+                    },
+                    "CreateUserName": {
+                        "type": "string",
+                        "title": "The CreateUserName Schema",
+                        "examples": [
+                            "Thamires Ramos",
+                            "Fagner Coloia"
+                        ]
+                    },
+                    "UpdateUserName": {
+                        "type": "string",
+                        "title": "The UpdateUserName Schema",
+                        "examples": [
+                            "Thamires Ramos",
+                            "Fagner Coloia"
+                        ]
+                    },
+                    "Inputs": {
+                        "type": "array",
+                        "title": "The Inputs Schema",
+                        "items": {
+                            "type": "object",
+                            "title": "A Schema",
+                            "required": [
+                                "Name"
+                            ],
+                            "properties": {
+                                "Name": {
+                                    "type": "string",
+                                    "title": "The Name Schema",
+                                    "examples": [
+                                        "telefone",
+                                        "ddd"
+                                    ]
+                                }
+                            },
+                            "examples": [{
+                                "Name": "telefone"
+                            },
+                            {
+                                "Name": "ddd"
+                            },
+                            {
+                                "Name": "ddd"
+                            },
+                            {
+                                "Name": "telefone"
+                            },
+                            {
+                                "Name": "telefone"
+                            },
+                            {
+                                "Name": "ddd"
+                            },
+                            {
+                                "Name": "ddd"
+                            },
+                            {
+                                "Name": "telefone"
+                            }]
+                        },
+                        "examples": [
+                            [{
+                                "Name": "telefone"
+                            },
+                            {
+                                "Name": "ddd"
+                            }],
+                            [{
+                                "Name": "ddd"
+                            },
+                            {
+                                "Name": "telefone"
+                            }],
+                            [{
+                                "Name": "telefone"
+                            },
+                            {
+                                "Name": "ddd"
+                            }],
+                            [{
+                                "Name": "ddd"
+                            },
+                            {
+                                "Name": "telefone"
+                            }]
+                        ]
+                    },
+                    "InativatedDate": {
+                        "type": [
+                            "null",
+                            "string"
+                        ],
+                        "title": "The InativatedDate Schema",
+                        "examples": [
+                            null,
+                            "2024-08-26T22:07:25.941731",
+                            "2024-08-16T18:54:33.111094",
+                            "2024-08-23T18:44:41.991002"
+                        ]
+                    },
+                    "CanDelete": {
+                        "type": "boolean",
+                        "title": "The CanDelete Schema",
+                        "examples": [
+                            false,
+                            true
+                        ]
+                    }
+                },
+                "examples": [{
+                    "Id": "6643235945352591",
+                    "Name": "AE979604304001601908006",
+                    "Description": "MU44XBMX5546021376034500466GMH",
+                    "Status": "INACTIVE",
+                    "CreatedBy": "thamires.ramos@ilabqa.com",
+                    "Created": "2024-07-31T17:29:55.224473",
+                    "UpdatedBy": "thamires.ramos@ilabqa.com",
+                    "Updated": "2024-07-31T17:29:55.255075",
+                    "CreateUserName": "Thamires Ramos",
+                    "UpdateUserName": "Thamires Ramos",
+                    "Inputs": [{
+                        "Name": "telefone"
+                    },
+                    {
+                        "Name": "ddd"
+                    }],
+                    "InativatedDate": null,
+                    "CanDelete": false
+                },
+                {
+                    "Id": "3844358645643898",
+                    "Name": "AL9720400099D469Y3MN45481Y31",
+                    "Description": "Quidem et nemo dolor rem animi",
+                    "Status": "INACTIVE",
+                    "CreatedBy": "thamires.ramos@ilabqa.com",
+                    "Created": "2024-08-26T22:07:25.937991",
+                    "UpdatedBy": "thamires.ramos@ilabqa.com",
+                    "Updated": "2024-08-26T22:28:17.186012",
+                    "CreateUserName": "Thamires Ramos",
+                    "UpdateUserName": "Thamires Ramos",
+                    "Inputs": [{
+                        "Name": "ddd"
+                    },
+                    {
+                        "Name": "telefone"
+                    }],
+                    "InativatedDate": "2024-08-26T22:07:25.941731",
+                    "CanDelete": false
+                },
+                {
+                    "Id": "4913222109853697",
+                    "Name": "ALTURA",
+                    "Description": "Altura 1",
+                    "Status": "INACTIVE",
+                    "CreatedBy": "fagner.coloia@fastsolucoes.com.br",
+                    "Created": "2024-08-16T18:54:33.041557",
+                    "UpdatedBy": "fagner.coloia@fastsolucoes.com.br",
+                    "Updated": "2024-08-27T19:36:47.675716",
+                    "CreateUserName": "Fagner Coloia",
+                    "UpdateUserName": "Fagner Coloia",
+                    "Inputs": [{
+                        "Name": "telefone"
+                    },
+                    {
+                        "Name": "ddd"
+                    }],
+                    "InativatedDate": "2024-08-16T18:54:33.111094",
+                    "CanDelete": true
+                },
+                {
+                    "Id": "5409980716923051",
+                    "Name": "ALTURA2",
+                    "Description": "Altura 2",
+                    "Status": "INACTIVE",
+                    "CreatedBy": "fagner.coloia@fastsolucoes.com.br",
+                    "Created": "2024-08-23T18:44:41.98051",
+                    "UpdatedBy": "fagner.coloia@fastsolucoes.com.br",
+                    "Updated": "2024-08-23T18:44:42.014234",
+                    "CreateUserName": "Fagner Coloia",
+                    "UpdateUserName": "Fagner Coloia",
+                    "Inputs": [{
+                        "Name": "ddd"
+                    },
+                    {
+                        "Name": "telefone"
+                    }],
+                    "InativatedDate": "2024-08-23T18:44:41.991002",
+                    "CanDelete": false
+                }]
+            },
+            "examples": [
+                [{
+                    "Id": "6643235945352591",
+                    "Name": "AE979604304001601908006",
+                    "Description": "MU44XBMX5546021376034500466GMH",
+                    "Status": "INACTIVE",
+                    "CreatedBy": "thamires.ramos@ilabqa.com",
+                    "Created": "2024-07-31T17:29:55.224473",
+                    "UpdatedBy": "thamires.ramos@ilabqa.com",
+                    "Updated": "2024-07-31T17:29:55.255075",
+                    "CreateUserName": "Thamires Ramos",
+                    "UpdateUserName": "Thamires Ramos",
+                    "Inputs": [{
+                        "Name": "telefone"
+                    },
+                    {
+                        "Name": "ddd"
+                    }],
+                    "InativatedDate": null,
+                    "CanDelete": false
+                },
+                {
+                    "Id": "3844358645643898",
+                    "Name": "AL9720400099D469Y3MN45481Y31",
+                    "Description": "Quidem et nemo dolor rem animi",
+                    "Status": "INACTIVE",
+                    "CreatedBy": "thamires.ramos@ilabqa.com",
+                    "Created": "2024-08-26T22:07:25.937991",
+                    "UpdatedBy": "thamires.ramos@ilabqa.com",
+                    "Updated": "2024-08-26T22:28:17.186012",
+                    "CreateUserName": "Thamires Ramos",
+                    "UpdateUserName": "Thamires Ramos",
+                    "Inputs": [{
+                        "Name": "ddd"
+                    },
+                    {
+                        "Name": "telefone"
+                    }],
+                    "InativatedDate": "2024-08-26T22:07:25.941731",
+                    "CanDelete": false
+                },
+                {
+                    "Id": "4913222109853697",
+                    "Name": "ALTURA",
+                    "Description": "Altura 1",
+                    "Status": "INACTIVE",
+                    "CreatedBy": "fagner.coloia@fastsolucoes.com.br",
+                    "Created": "2024-08-16T18:54:33.041557",
+                    "UpdatedBy": "fagner.coloia@fastsolucoes.com.br",
+                    "Updated": "2024-08-27T19:36:47.675716",
+                    "CreateUserName": "Fagner Coloia",
+                    "UpdateUserName": "Fagner Coloia",
+                    "Inputs": [{
+                        "Name": "telefone"
+                    },
+                    {
+                        "Name": "ddd"
+                    }],
+                    "InativatedDate": "2024-08-16T18:54:33.111094",
+                    "CanDelete": true
+                },
+                {
+                    "Id": "5409980716923051",
+                    "Name": "ALTURA2",
+                    "Description": "Altura 2",
+                    "Status": "INACTIVE",
+                    "CreatedBy": "fagner.coloia@fastsolucoes.com.br",
+                    "Created": "2024-08-23T18:44:41.98051",
+                    "UpdatedBy": "fagner.coloia@fastsolucoes.com.br",
+                    "Updated": "2024-08-23T18:44:42.014234",
+                    "CreateUserName": "Fagner Coloia",
+                    "UpdateUserName": "Fagner Coloia",
+                    "Inputs": [{
+                        "Name": "ddd"
+                    },
+                    {
+                        "Name": "telefone"
+                    }],
+                    "InativatedDate": "2024-08-23T18:44:41.991002",
+                    "CanDelete": false
+                }]
+            ]
+        }
+    },
+    "examples": [{
+        "TotalElements": 162,
+        "CredentialsList": [{
+            "Id": "6643235945352591",
+            "Name": "AE979604304001601908006",
+            "Description": "MU44XBMX5546021376034500466GMH",
+            "Status": "INACTIVE",
+            "CreatedBy": "thamires.ramos@ilabqa.com",
+            "Created": "2024-07-31T17:29:55.224473",
+            "UpdatedBy": "thamires.ramos@ilabqa.com",
+            "Updated": "2024-07-31T17:29:55.255075",
+            "CreateUserName": "Thamires Ramos",
+            "UpdateUserName": "Thamires Ramos",
+            "Inputs": [{
+                "Name": "telefone"
+            },
+            {
+                "Name": "ddd"
+            }],
+            "InativatedDate": null,
+            "CanDelete": false
+        },
+        {
+            "Id": "3844358645643898",
+            "Name": "AL9720400099D469Y3MN45481Y31",
+            "Description": "Quidem et nemo dolor rem animi",
+            "Status": "INACTIVE",
+            "CreatedBy": "thamires.ramos@ilabqa.com",
+            "Created": "2024-08-26T22:07:25.937991",
+            "UpdatedBy": "thamires.ramos@ilabqa.com",
+            "Updated": "2024-08-26T22:28:17.186012",
+            "CreateUserName": "Thamires Ramos",
+            "UpdateUserName": "Thamires Ramos",
+            "Inputs": [{
+                "Name": "ddd"
+            },
+            {
+                "Name": "telefone"
+            }],
+            "InativatedDate": "2024-08-26T22:07:25.941731",
+            "CanDelete": false
+        },
+        {
+            "Id": "4913222109853697",
+            "Name": "ALTURA",
+            "Description": "Altura 1",
+            "Status": "INACTIVE",
+            "CreatedBy": "fagner.coloia@fastsolucoes.com.br",
+            "Created": "2024-08-16T18:54:33.041557",
+            "UpdatedBy": "fagner.coloia@fastsolucoes.com.br",
+            "Updated": "2024-08-27T19:36:47.675716",
+            "CreateUserName": "Fagner Coloia",
+            "UpdateUserName": "Fagner Coloia",
+            "Inputs": [{
+                "Name": "telefone"
+            },
+            {
+                "Name": "ddd"
+            }],
+            "InativatedDate": "2024-08-16T18:54:33.111094",
+            "CanDelete": true
+        },
+        {
+            "Id": "5409980716923051",
+            "Name": "ALTURA2",
+            "Description": "Altura 2",
+            "Status": "INACTIVE",
+            "CreatedBy": "fagner.coloia@fastsolucoes.com.br",
+            "Created": "2024-08-23T18:44:41.98051",
+            "UpdatedBy": "fagner.coloia@fastsolucoes.com.br",
+            "Updated": "2024-08-23T18:44:42.014234",
+            "CreateUserName": "Fagner Coloia",
+            "UpdateUserName": "Fagner Coloia",
+            "Inputs": [{
+                "Name": "ddd"
+            },
+            {
+                "Name": "telefone"
+            }],
+            "InativatedDate": "2024-08-23T18:44:41.991002",
+            "CanDelete": false
+        }]
+    }]
+}

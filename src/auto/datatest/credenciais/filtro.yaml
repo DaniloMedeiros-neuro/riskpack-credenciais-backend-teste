@@ -1,0 +1,179 @@
+BODY_CREDENCIAL_FILTER:
+  CONSULTA_INEXISTENTE:
+    Filter:
+      Description: ''
+      Name: ''
+      Status: ''
+      User: ''
+    QueryName: CORRECTDATAGRAVAME
+  CONSULTA_VAZIA:
+    Filter:
+      Description: ''
+      Name: ''
+      Status: ''
+      User: ''
+    QueryName: ''
+  DESCRICAO:
+    campo1:
+      nome: Description
+      valor: DESCRICAO DE TESTE AUTOMACAO CREDENCIAIS
+    campo2:
+      nome: Name
+      valor: ''
+    campo3:
+      nome: Status
+      valor: ''
+    campo4:
+      nome: User
+      valor: ''
+  DESCRICAO_INEXISTENTE:
+    campo1:
+      nome: Description
+      valor: TESTEAUTOMACAO
+    campo2:
+      nome: Name
+      valor: ''
+    campo3:
+      nome: Status
+      valor: ''
+    campo4:
+      nome: User
+      valor: ''
+  FILTROS_VAZIO:
+    campo1:
+      nome: Name
+      valor: ''
+    campo2:
+      nome: Status
+      valor: ''
+    campo3:
+      nome: Description
+      valor: ''
+    campo4:
+      nome: User
+      valor: ''
+  NOME:
+    campo1:
+      nome: Name
+      valor: api
+    campo2:
+      nome: Status
+      valor: ''
+    campo3:
+      nome: Description
+      valor: ''
+    campo4:
+      nome: User
+      valor: ''
+  NOME_INEXISTENTE:
+    campo1:
+      nome: Name
+      valor: loucura
+    campo2:
+      nome: Status
+      valor: ''
+    campo3:
+      nome: Description
+      valor: ''
+    campo4:
+      nome: User
+      valor: ''
+  STATUS_ATIVO:
+    campo1:
+      nome: Status
+      valor: ACTIVE
+    campo2:
+      nome: Name
+      valor: ''
+    campo3:
+      nome: Description
+      valor: ''
+    campo4:
+      nome: User
+      valor: ''
+  STATUS_ATIVO_COMPARTILHAR:
+    campo1:
+      nome: Status
+      valor: ACTIVE
+  STATUS_INATIVO:
+    campo1:
+      nome: Status
+      valor: INACTIVE
+    campo2:
+      nome: Name
+      valor: ''
+    campo3:
+      nome: Description
+      valor: ''
+    campo4:
+      nome: User
+      valor: ''
+  STATUS_INVALIDO:
+    campo1:
+      nome: Status
+      valor: TESTEAUTOMACAO
+    campo2:
+      nome: Name
+      valor: ''
+    campo3:
+      nome: Description
+      valor: ''
+    campo4:
+      nome: User
+      valor: ''
+  SUCESSO:
+    Filter:
+      Description: DESCRICAO DE TESTE AUTOMACAO CREDENCIAIS
+      Name: TESTE
+      Status: INACTIVE
+      User: Thamires
+    QueryName: ABRTELECOM
+  SUCESSO_COLISAO:
+    Filter:
+      Description: Credencial criada para colisao pela automacao
+      Name: TESTE_AUTOMACAO_BACK_COLISAO_123
+      Status: INACTIVE
+      User: Automacao
+    QueryName: APONTADOR
+  SUCESSO_COMPARTILHAR:
+    Filter:
+      Description: ''
+      Name: TESTE_AUTOMACAO_BACK_COMPARTILHAR_5197
+      Status: INACTIVE
+      User: Automacao
+    QueryName: TESTE_AUTOMACAO_BACK_CONSULTA_Z1C_D
+  SUCESSO_EXCLUSAO:
+    Filter:
+      Description: Credencial criada para ser excluida pela automacao
+      Name: TESTE_AUTOMACAO_BACK_EXCLUSAO_123
+      Status: INACTIVE
+      User: Automacao
+    QueryName: APONTADOR
+  USUARIO:
+    campo1:
+      nome: Name
+      valor: ''
+    campo2:
+      nome: Status
+      valor: ''
+    campo3:
+      nome: Description
+      valor: ''
+    campo4:
+      nome: User
+      valor: QA ILAB
+  USUARIO_INEXISTENTE:
+    campo1:
+      nome: Name
+      valor: ''
+    campo2:
+      nome: Status
+      valor: ''
+    campo3:
+      nome: Description
+      valor: ''
+    campo4:
+      nome: User
+      valor: loucura
+ENDPOINT_CREDENCIAL_FILTER:
+  PATH: /api/v1/credentials/search

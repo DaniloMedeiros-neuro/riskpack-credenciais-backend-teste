@@ -1,0 +1,130 @@
+{
+    "$schema": "https://json-schema.org/draft/2019-09/schema",
+    "$id": "http://example.com/example.json",
+    "type": "object",
+    "default": {},
+    "title": "Root Schema",
+    "required": [
+        "TotalElements",
+        "GatewayQueries"
+    ],
+    "properties": {
+        "TotalElements": {
+            "type": "integer",
+            "default": 0,
+            "title": "The TotalElements Schema",
+            "examples": [
+                1
+            ]
+        },
+        "GatewayQueries": {
+            "type": "array",
+            "default": [],
+            "title": "The GatewayQueries Schema",
+            "items": {
+                "type": "object",
+                "default": {},
+                "title": "A Schema",
+                "required": [
+                    "id",
+                    "queryName",
+                    "queryDescription",
+                    "queryVersion",
+                    "credentialCount",
+                    "existGateway",
+                    "longId"
+                ],
+                "properties": {
+                    "id": {
+                        "type": "string",
+                        "default": "",
+                        "title": "The id Schema",
+                        "examples": [
+                            "3347082644688670"
+                        ]
+                    },
+                    "queryName": {
+                        "type": "string",
+                        "default": "",
+                        "title": "The queryName Schema",
+                        "examples": [
+                            "ABRTELECOM"
+                        ]
+                    },
+                    "queryDescription": {
+                        "type": "string",
+                        "default": "",
+                        "title": "The queryDescription Schema",
+                        "examples": [
+                            "Informacoes sobre a operadora do numero fornecido"
+                        ]
+                    },
+                    "queryVersion": {
+                        "type": "string",
+                        "default": "",
+                        "title": "The queryVersion Schema",
+                        "examples": [
+                            "v20230710"
+                        ]
+                    },
+                    "credentialCount": {
+                        "type": "integer",
+                        "default": 0,
+                        "title": "The credentialCount Schema",
+                        "examples": [
+                            87
+                        ]
+                    },
+                    "existGateway": {
+                        "type": "boolean",
+                        "default": false,
+                        "title": "The existGateway Schema",
+                        "examples": [
+                            true
+                        ]
+                    },
+                    "longId": {
+                        "type": "integer",
+                        "default": 0,
+                        "title": "The longId Schema",
+                        "examples": [
+                            3347082644688670
+                        ]
+                    }
+                },
+                "examples": [{
+                    "id": "3347082644688670",
+                    "queryName": "ABRTELECOM",
+                    "queryDescription": "Informacoes sobre a operadora do numero fornecido",
+                    "queryVersion": "v20230710",
+                    "credentialCount": 87,
+                    "existGateway": true,
+                    "longId": 3347082644688670
+                }]
+            },
+            "examples": [
+                [{
+                    "id": "3347082644688670",
+                    "queryName": "ABRTELECOM",
+                    "queryDescription": "Informacoes sobre a operadora do numero fornecido",
+                    "queryVersion": "v20230710",
+                    "credentialCount": 87,
+                    "existGateway": true,
+                    "longId": 3347082644688670
+                }]
+            ]
+        }
+    },
+    "examples": [{
+        "TotalElements": 1,
+        "GatewayQueries": [{
+            "id": "3347082644688670",
+            "queryName": "ABRTELECOM",
+            "queryDescription": "Informacoes sobre a operadora do numero fornecido",
+            "queryVersion": "v20230710",
+            "credentialCount": 87,
+            "existGateway": true,
+            "longId": 3347082644688670
+        }]
+    }]
+}

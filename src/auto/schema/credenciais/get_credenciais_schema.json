@@ -1,0 +1,212 @@
+{
+  "$schema": "https://json-schema.org/draft/2019-09/schema",
+  "$id": "http://example.com/example.json",
+  "type": "object",
+  "default": {},
+  "title": "Root Schema",
+  "required": [
+    "OperationCode",
+    "StatusCode",
+    "Message",
+    "StartTime",
+    "EndTime",
+    "Tracer",
+    "TotalRegisterCount",
+    "Result"
+  ],
+  "properties": {
+    "OperationCode": {
+      "type": "null",
+      "default": null,
+      "title": "The OperationCode Schema",
+      "examples": [
+        null
+      ]
+    },
+    "StatusCode": {
+      "type": "string",
+      "default": "",
+      "title": "The StatusCode Schema",
+      "examples": [
+        "0100"
+      ]
+    },
+    "Message": {
+      "type": "string",
+      "default": "",
+      "title": "The Message Schema",
+      "examples": [
+        "OK"
+      ]
+    },
+    "StartTime": {
+      "type": "string",
+      "default": "",
+      "title": "The StartTime Schema",
+      "examples": [
+        "2023-01-03T12:17:24.808+0000"
+      ]
+    },
+    "EndTime": {
+      "type": "string",
+      "default": "",
+      "title": "The EndTime Schema",
+      "examples": [
+        "2023-01-03T12:17:24.817+0000"
+      ]
+    },
+    "Tracer": {
+      "type": "array",
+      "default": [],
+      "title": "The Tracer Schema",
+      "items": {
+        "type": "string",
+        "title": "A Schema",
+        "examples": [
+          "03/01/2023 09:17:24.808: Início Filter",
+          "03/01/2023 09:17:24.809: Início Exec Query",
+          "03/01/2023 09:17:24.817: Fim Exec Query",
+          "00:00:00.008: Tempo Exec Query",
+          "03/01/2023 09:17:24.808: Fim Filter",
+          "Tempo Total: 00:00:00.009"
+        ]
+      },
+      "examples": [
+        [
+          "03/01/2023 09:17:24.808: Início Filter",
+          "03/01/2023 09:17:24.809: Início Exec Query",
+          "03/01/2023 09:17:24.817: Fim Exec Query",
+          "00:00:00.008: Tempo Exec Query",
+          "03/01/2023 09:17:24.808: Fim Filter",
+          "Tempo Total: 00:00:00.009"
+        ]
+      ]
+    },
+    "TotalRegisterCount": {
+      "type": "string",
+      "default": "",
+      "title": "The TotalRegisterCount Schema",
+      "examples": [
+        "1"
+      ]
+    },
+    "Result": {
+      "type": "array",
+      "default": [],
+      "title": "The Result Schema",
+      "items": {
+        "type": "object",
+        "default": {},
+        "title": "A Schema",
+        "required": [
+          "ID",
+          "Timestamp",
+          "Client",
+          "Artifact",
+          "Status",
+          "Result"
+        ],
+        "properties": {
+          "ID": {
+            "type": "string",
+            "default": "",
+            "title": "The ID Schema",
+            "examples": [
+              "573021120357376362"
+            ]
+          },
+          "Timestamp": {
+            "type": "string",
+            "default": "",
+            "title": "The Timestamp Schema",
+            "examples": [
+              "2022-12-06T22:16:05.089+0000"
+            ]
+          },
+          "Client": {
+            "type": "string",
+            "default": "",
+            "title": "The Client Schema",
+            "examples": [
+              "1"
+            ]
+          },
+          "Artifact": {
+            "type": "string",
+            "default": "",
+            "title": "The Artifact Schema",
+            "examples": [
+              "CONDUCTORATUALIZACAD"
+            ]
+          },
+          "Status": {
+            "type": "string",
+            "default": "",
+            "title": "The Status Schema",
+            "examples": [
+              "0100"
+            ]
+          },
+          "Result": {
+            "type": "string",
+            "default": "",
+            "title": "The Result Schema",
+            "examples": [
+              "OK"
+            ]
+          }
+        },
+        "examples": [
+          {
+            "ID": "573021120357376362",
+            "Timestamp": "2022-12-06T22:16:05.089+0000",
+            "Client": "1",
+            "Artifact": "CONDUCTORATUALIZACAD",
+            "Status": "0100",
+            "Result": "OK"
+          }
+        ]
+      },
+      "examples": [
+        [
+          {
+            "ID": "573021120357376362",
+            "Timestamp": "2022-12-06T22:16:05.089+0000",
+            "Client": "1",
+            "Artifact": "CONDUCTORATUALIZACAD",
+            "Status": "0100",
+            "Result": "OK"
+          }
+        ]
+      ]
+    }
+  },
+  "examples": [
+    {
+      "OperationCode": null,
+      "StatusCode": "0100",
+      "Message": "OK",
+      "StartTime": "2023-01-03T12:17:24.808+0000",
+      "EndTime": "2023-01-03T12:17:24.817+0000",
+      "Tracer": [
+        "03/01/2023 09:17:24.808: Início Filter",
+        "03/01/2023 09:17:24.809: Início Exec Query",
+        "03/01/2023 09:17:24.817: Fim Exec Query",
+        "00:00:00.008: Tempo Exec Query",
+        "03/01/2023 09:17:24.808: Fim Filter",
+        "Tempo Total: 00:00:00.009"
+      ],
+      "TotalRegisterCount": "1",
+      "Result": [
+        {
+          "ID": "573021120357376362",
+          "Timestamp": "2022-12-06T22:16:05.089+0000",
+          "Client": "1",
+          "Artifact": "CONDUCTORATUALIZACAD",
+          "Status": "0100",
+          "Result": "OK"
+        }
+      ]
+    }
+  ]
+}

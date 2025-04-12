@@ -1,0 +1,440 @@
+BODY_CREDENCIAL:
+  CONSULTA_DIFERENTE:
+    campo1:
+      nome: QueryName
+      valor: ACERTBUSCARIMAGEM
+  CONSULTA_INEXISTENTE:
+    campo1:
+      nome: QueryName
+      valor: TESTEAUTOMACAO
+  CONSULTA_NAO_CADASTRADA_NA_CONTA:
+    campo1:
+      nome: QueryName
+      valor: SISTEMASTHCOMPLETO003
+  CONSULTA_VAZIO:
+    campo1:
+      nome: QueryName
+      valor: null
+  DESCRICAO_CARACTERES_ESPECIAL_EDICAO:
+    campo1:
+      nome: Description
+      valor: Descricao invalida!@#$%&*
+  DESCRICAO_COM_MAIS_DE_50_EDICAO:
+    campo1:
+      nome: Description
+      valor: Officiis dicta minima vel alias quidem nobis Voluptate quas officiis
+        eum sint testando
+  DESCRICAO_DIFERENTE:
+    campo1:
+      nome: Description
+      valor: DESCRICAO DE TESTE AUTOMACAO CREDENCIAIS 539999
+  DESCRICAO_ESPACOS_EM_BRANCO:
+    campo1:
+      nome: Description
+      valor: '     '
+  DESCRICAO_ESPACOS_EM_BRANCO_EDICAO:
+    campo1:
+      nome: Description
+      valor: '     '
+  DESCRICAO_VAZIA:
+    campo1:
+      nome: Description
+      valor: ''
+  DESCRICAO_VAZIA_EDICAO:
+    campo1:
+      nome: Description
+      valor: ' '
+  ENTRADA_EXTRA:
+    Description: entrada extra na ABRTELECOM, alem de ddd e tel
+    Inputs:
+    - Name: ddd
+      Value: 65
+    - Name: telefone
+      Value: 994758632
+    - Name: entrada_extra
+      Value: testando
+    Name: TESTE_AUTOMACAO_BACK_ENTRADA_EXTRA
+    QueryName: ABRTELECOM
+  ENTRADA_EXTRA_EDICAO:
+    Description: entrada extra na ABRTELECOM, alem de ddd e tel
+    Inputs:
+    - Name: ddd
+      Value: 65
+    - Name: telefone
+      Value: 994758632
+    - Name: entrada_extra
+      Value: testando
+  ENTRADA_NOME_ESPACO_EM_BRANCO:
+    Description: Officiis dicta minima vel alias quidem
+    Inputs:
+    - Name: '    '
+      Value: 65
+    - Name: '    '
+      Value: 3)0R26UE2w
+    Name: TESTE_AUTOMACAO_BACK
+    QueryName: ABRTELECOM
+  ENTRADA_NOME_ESPACO_EM_BRANCO_EDICAO:
+    Description: Officiis dicta minima vel alias quidem
+    Inputs:
+    - Name: '    '
+      Value: 65
+    - Name: '    '
+      Value: 3)0R26UE2w
+  ENTRADA_NOME_VAZIO_EDICAO:
+    Description: Officiis dicta minima vel alias quidem
+    Inputs:
+    - Name: ''
+      Value: 52
+    - Name: telefone
+      Value: 9956324148
+  ENTRADA_VALOR_ESPACO_EM_BRANCO:
+    Description: Officiis dicta minima vel alias quidem
+    Inputs:
+    - Name: ddd
+      Value: '    '
+    - Name: telefone
+      Value: '    '
+    Name: TESTE_AUTOMACAO_BACK
+    QueryName: ABRTELECOM
+  ENTRADA_VALOR_ESPACO_EM_BRANCO_EDICAO:
+    Description: Officiis dicta minima vel alias quidem
+    Inputs:
+    - Name: ddd
+      Value: 54
+    - Name: telefone
+      Value: '    '
+  ENTRADA_VALOR_VAZIO_EDICAO:
+    Description: Officiis dicta minima vel alias quidem nobis
+    Inputs:
+    - Name: ddd
+      Value: ''
+    - Name: telefone
+      Value: ''
+  ENTRADA_VALOR_VAZIO_E_NOVA_ENTRADA_EDICAO:
+    Description: Officiis dicta minima vel alias quidem nobis
+    Inputs:
+    - Name: ddd
+      Value: ''
+    - Name: telefone
+      Value: teste1234
+    - Name: Arthur Rios
+      Value: Arthur Rios
+  ENTRADA_VAZIA:
+    Description: Fugit culpa doloribus Adipisci facere totam
+    Inputs: null
+    Name: TESTE_AUTOMACAO_BACK
+    QueryName: ABRTELECOM
+  NOME_ALEATORIO:
+    campo1:
+      nome: Name
+      valor: TESTE_AUTOMACAO_BACK_EXCLUSAO_657025
+  NOME_ALEATORIO_COLISAO:
+    campo1:
+      nome: Name
+      valor: TESTE_AUTOMACAO_BACK_COLISAO_514682
+  NOME_CREDENCIAL_COMECANDO_COM_NUMEROS:
+    campo1:
+      nome: Name
+      valor: 123_NOME_COMECANDO_COM_NUMEROS
+  NOME_CREDENCIAL_COM_CARACTERE_ESPECIAL:
+    campo1:
+      nome: Name
+      valor: NOME#$^ãóç
+  NOME_CREDENCIAL_COM_HIFEN:
+    campo1:
+      nome: Name
+      valor: NOME-CREDENCIAL-COM-HIFEN
+  NOME_CREDENCIAL_COM_MAIS_DE_50_CARACTERES:
+    campo1:
+      nome: Name
+      valor: NOME_CONTENDO_MAIS_DE_50_CARACTERESSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS
+  NOME_CREDENCIAL_COM_MENOS_DE_5_CARACTERES:
+    campo1:
+      nome: Name
+      valor: NOME
+  NOME_CREDENCIAL_COM_UNDERLINE:
+    campo1:
+      nome: Name
+      valor: NOME_CREDENCIAL_COM_UNDERLINE_539999
+  NOME_CREDENCIAL_ESPACOS:
+    campo1:
+      nome: Name
+      valor: NOME CONTENDO ESPACOS
+  NOME_CREDENCIAL_MINUSCULO:
+    campo1:
+      nome: Name
+      valor: Nome_letras_minusculas
+  NOME_CREDENCIAL_NULL:
+    campo1:
+      nome: Name
+      valor: null
+  NOME_CREDENCIAL_VAZIO:
+    campo1:
+      nome: Name
+      valor: '    '
+  SEM_O_CAMPO_CONSULTA:
+    Description: Blanditiis neque corrupti assumenda nihil
+    Inputs:
+    - Name: ddd
+      Value: 63
+    - Name: telefone
+      Value: '@%RHsmCD%3'
+    Name: TESTE_AUTOMACAO_BACK
+  SEM_O_CAMPO_DESCRICAO:
+    Inputs:
+    - Name: ddd
+      Value: 63
+    - Name: telefone
+      Value: '@%RHsmCD%3'
+    Name: TESTE_AUTOMACAO_BACK
+    QueryName: ABRTELECOM
+  SEM_O_CAMPO_ENTRADAS:
+    Description: Blanditiis neque corrupti assumenda nihil
+    Name: TESTE_AUTOMACAO_BACK
+    QueryName: ABRTELECOM
+  SEM_O_CAMPO_ENTRADAS_NAME:
+    Description: Officiis dicta minima vel alias quidem
+    Inputs:
+    - Name: null
+      Value: 74
+    - Name: null
+      Value: 995623414
+    Name: TESTE_AUTOMACAO_BACK
+    QueryName: ABRTELECOM
+  SEM_O_CAMPO_ENTRADAS_VALOR:
+    Description: Nulla rem commodi rem itaque accusantium nostrum
+    Inputs:
+    - Name: ddd
+      Value: null
+    - Name: telefone
+      Value: null
+    Name: TESTE_AUTOMACAO_BACK
+    QueryName: ABRTELECOM
+  SEM_O_CAMPO_NOME:
+    Description: Blanditiis neque corrupti assumenda nihil
+    Inputs:
+    - Name: ddd
+      Value: 74
+    - Name: telefone
+      Value: 995623414
+    QueryName: ABRTELECOM
+  SUCESSO:
+    Description: Natus odit possimus labore
+    Inputs:
+    - Name: ddd
+      Value: 28
+    - Name: telefone
+      Value: 0300-520-3856
+    Name: TESTE_AUTOMACAO_BACK_BYAPAEY__XYVLFRLAIO1MJXEL
+    QueryName: ABRTELECOM
+  SUCESSO_COLISAO:
+    Description: Credencial criada para colisao pela automacao
+    Inputs:
+    - Name: cep
+      Value: 36376-084
+    Name: TESTE_AUTOMACAO_BACK_COLISAO_123
+    QueryName: APONTADOR
+  SUCESSO_COMPARTILHAMENTO:
+    credentialId: '5490626330065675'
+    dateFinal: '2026-02-20'
+    qtdSubmissions: 99
+    stopShared: 'false'
+  SUCESSO_CRIAR_COMPARTILHAR:
+    Description: Delectus culpa eveniet praesentium nisi
+    Inputs:
+    - Name: TESTE_ENTRADA_006397
+      Value: '123'
+    - Name: TESTE_ENTRADA_754754
+      Value: '456'
+    Name: TESTE_AUTOMACAO_BACK_COMPARTILHAR_5197
+    QueryName: TESTE_AUTOMACAO_BACK_CONSULTA_Z1C_D
+  SUCESSO_CRIAR_COMPARTILHAR_1:
+    Description: Delectus culpa eveniet praesentium nisi
+    Inputs:
+    - Name: TESTE_ENTRADA_006397
+      Value: '123'
+    - Name: TESTE_ENTRADA_754754
+      Value: '456'
+    Name: TESTE_AUTOMACAO_BACK_COMPARTILHAR_51975197
+    QueryName: TESTE_AUTOMACAO_BACK_CONSULTA_Z1C_D
+  SUCESSO_CRIAR_COMPARTILHAR_2:
+    Description: Inventore rem qui suscipit iste blanditiis
+    Inputs:
+    - Name: TESTE_ENTRADA_681702
+      Value: '123'
+    - Name: TESTE_ENTRADA_552552
+      Value: '456'
+    Name: TESTE_AUTOMACAO_BACK_COMPARTILHAR_45779
+    QueryName: TESTE_AUTOMACAO_BACK_CONSULTA_RML1UG3HLI0V9
+  SUCESSO_EDICAO:
+    Description: Natus odit possimus labore
+    Inputs:
+    - Name: ddd
+      Value: 28
+    - Name: telefone
+      Value: 0300-520-3856
+  SUCESSO_EXCLUSAO:
+    Description: Credencial criada para ser excluida pela automacao
+    Inputs:
+    - Name: cep
+      Value: 07872-562
+    Name: TESTE_AUTOMACAO_BACK_EXCLUSAO_123
+    QueryName: APONTADOR
+  SUCESSO_STATUS:
+    ATIVAR: ACTIVE
+    INATIVAR: INACTIVE
+    INVALIDO: TESTE_AUTOMACAO
+BODY_CREDENCIAL_COMPARTILHAR:
+  CREDENTIAL_ID_NULO:
+    campo1:
+      nome: credentialId
+      valor: null
+  CREDENTIAL_ID_SUCESSO_ATIVO_DEFINITIVO:
+    campo1:
+      nome: credentialId
+      valor: '2788899907209566'
+  CREDENTIAL_ID_SUCESSO_ATIVO_NOVO_RASCUNHO:
+    campo1:
+      nome: credentialId
+      valor: '2788899907209566'
+  CREDENTIAL_ID_SUCESSO_ATIVO_RASCUNHO:
+    campo1:
+      nome: credentialId
+      valor: '2788899907209566'
+  CREDENTIAL_ID_SUCESSO_INATIVO_DEFINITIVO:
+    campo1:
+      nome: credentialId
+      valor: '2788899907209566'
+  CREDENTIAL_ID_SUCESSO_INATIVO_RASCUNHO:
+    campo1:
+      nome: credentialId
+      valor: '2788899907209566'
+  CREDENTIAL_ID_SUCESSO_INATIVO_RASCUNHO_INTERROMPER:
+    campo1:
+      nome: credentialId
+      valor: '2788899907209566'
+  CREDENTIAL_ID_VAZIO:
+    campo1:
+      nome: credentialId
+      valor: ''
+  CREDENTIAL_INEXISTENTE:
+    campo1:
+      nome: credentialId
+      valor: '123456789'
+  DATE_FINAL_E_QTD_SUBMISSIONS_VAZIOS:
+    credentialId: '8725734433343324'
+    dateFinal: ''
+    qtdSubmissions: ''
+    stopShared: 'false'
+  DATE_FINAL_FORMATO_AAAA_MM_DD:
+    credentialId: '8725734433343324'
+    dateFinal: 2026/11/20
+    qtdSubmissions: 99
+    stopShared: 'false'
+  DATE_FINAL_FORMATO_AAAA_MM_DD_TRACO:
+    credentialId: '8725734433343324'
+    dateFinal: '2026-12-21'
+    qtdSubmissions: 99
+    stopShared: 'false'
+  DATE_FINAL_FORMATO_DD_MM_AAAA:
+    credentialId: '8725734433343324'
+    dateFinal: 22/09/2026
+    qtdSubmissions: 99
+    stopShared: 'false'
+  DATE_FINAL_FORMATO_DD_MM_AAAA_TRACO:
+    credentialId: '8725734433343324'
+    dateFinal: 23-03-2026
+    qtdSubmissions: 99
+    stopShared: 'false'
+  DATE_FINAL_INEXISTENTE:
+    credentialId: '8725734433343324'
+    dateFinal: 31/06/2025
+    qtdSubmissions: 99
+    stopShared: 'false'
+  DATE_FINAL_INVÁLIDA:
+    credentialId: '8725734433343324'
+    dateFinal: 32/15/2025
+    qtdSubmissions: 99
+    stopShared: 'false'
+  DATE_FINAL_PASSADA:
+    credentialId: '8725734433343324'
+    dateFinal: 15/06/2024
+    qtdSubmissions: 99
+    stopShared: 'false'
+  DATE_FINAL_VAZIO:
+    credentialId: '8725734433343324'
+    dateFinal: ''
+    qtdSubmissions: 99
+    stopShared: 'false'
+  QTD_SUBMISSIONS_LETRAS:
+    credentialId: '8725734433343324'
+    dateFinal: 25-06-2026
+    qtdSubmissions: ABC
+    stopShared: 'false'
+  QTD_SUBMISSIONS_MAIOR_2_DIGITOS:
+    credentialId: '8725734433343324'
+    dateFinal: 25-06-2026
+    qtdSubmissions: 1234
+    stopShared: 'false'
+  QTD_SUBMISSIONS_NEGATIVO:
+    credentialId: '8725734433343324'
+    dateFinal: 25-06-2026
+    qtdSubmissions: -35
+    stopShared: 'false'
+  QTD_SUBMISSIONS_VAZIO:
+    credentialId: '8725734433343324'
+    dateFinal: 25-06-2026
+    qtdSubmissions: null
+    stopShared: 'false'
+  QUERYNAME_SUCESSO:
+    campo1:
+      nome: QueryName
+      valor: TESTE_AUTOMACAO_BACK_CONSULTA_Z1C_D
+  QUERYNAME_SUCESSO_2:
+    campo1:
+      nome: QueryName
+      valor: TESTE_AUTOMACAO_BACK_CONSULTA_Z1C_D2
+  STOP_SHARED:
+    credentialId: '8725734433343324'
+    dateFinal: 25-06-2026
+    qtdSubmissions: 99
+    stopShared: 'true'
+  STOP_SHARED_NAO_BOOLEANO:
+    credentialId: '8725734433343324'
+    dateFinal: 25-06-2026
+    qtdSubmissions: 99
+    stopShared: TESTE
+  STOP_SHARED_VAZIO:
+    credentialId: '8725734433343324'
+    dateFinal: 25-06-2026
+    qtdSubmissions: 99
+    stopShared: ''
+ENDPOINT_CREDENCIAL:
+  CREDTID:
+    INVALIDO: '123456789'
+    SUCESSO: '1331145932254261'
+    VAZIO: null
+  CREDTID_COLISAO:
+    SUCESSO: '4949752515854314'
+  CREDTID_COMPARTILHAR:
+    SUCESSO: '7783809209625899'
+  CREDTID_EXCLUSAO:
+    CONSULTA: APONTADOR
+    CONSULTA_COM_CREDENCIAL_ATIVA: ABRTELECOM
+    INVALIDO: '123456789'
+    SUCESSO: '5417147547888695'
+    VAZIO: null
+  NAME_CREDENTIAL:
+    COMPARTILHADA: TESTE_2
+    NAO_COMPARTILHADA: ABRTELECOM
+    VAZIO: null
+  PARAMETER:
+    PAGE: 0
+    PAGE_EMPTY: EMPTY
+    PAGE_INVALID: abc
+    PAGE_MAIOR: 10
+    SIZE: 10
+    SIZE_EMPTY: EMPTY
+    SIZE_INVALID: abc
+  PATH: /api/v1/credentials
+  PATH_COMPARTILHAMENTO: /api/v1/shared

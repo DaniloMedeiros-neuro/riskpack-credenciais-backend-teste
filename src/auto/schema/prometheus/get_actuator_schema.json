@@ -1,0 +1,307 @@
+{
+    "$schema": "https://json-schema.org/draft/2019-09/schema",
+    "$id": "http://example.com/example.json",
+    "type": "object",
+    "default": {},
+    "title": "Root Schema",
+    "required": [
+        "_links"
+    ],
+    "properties": {
+        "_links": {
+            "type": "object",
+            "default": {},
+            "title": "The _links Schema",
+            "required": [
+                "self",
+                "health-path",
+                "health",
+                "info",
+                "prometheus",
+                "metrics-requiredMetricName",
+                "metrics"
+            ],
+            "properties": {
+                "self": {
+                    "type": "object",
+                    "default": {},
+                    "title": "The self Schema",
+                    "required": [
+                        "href",
+                        "templated"
+                    ],
+                    "properties": {
+                        "href": {
+                            "type": "string",
+                            "default": "",
+                            "title": "The href Schema",
+                            "examples": [
+                                "http://localhost:8080/actuator"
+                            ]
+                        },
+                        "templated": {
+                            "type": "boolean",
+                            "default": false,
+                            "title": "The templated Schema",
+                            "examples": [
+                                false
+                            ]
+                        }
+                    },
+                    "examples": [{
+                        "href": "http://localhost:8080/actuator",
+                        "templated": false
+                    }]
+                },
+                "health-path": {
+                    "type": "object",
+                    "default": {},
+                    "title": "The health-path Schema",
+                    "required": [
+                        "href",
+                        "templated"
+                    ],
+                    "properties": {
+                        "href": {
+                            "type": "string",
+                            "default": "",
+                            "title": "The href Schema",
+                            "examples": [
+                                "http://localhost:8080/actuator/health/{*path}"
+                            ]
+                        },
+                        "templated": {
+                            "type": "boolean",
+                            "default": false,
+                            "title": "The templated Schema",
+                            "examples": [
+                                true
+                            ]
+                        }
+                    },
+                    "examples": [{
+                        "href": "http://localhost:8080/actuator/health/{*path}",
+                        "templated": true
+                    }]
+                },
+                "health": {
+                    "type": "object",
+                    "default": {},
+                    "title": "The health Schema",
+                    "required": [
+                        "href",
+                        "templated"
+                    ],
+                    "properties": {
+                        "href": {
+                            "type": "string",
+                            "default": "",
+                            "title": "The href Schema",
+                            "examples": [
+                                "http://localhost:8080/actuator/health"
+                            ]
+                        },
+                        "templated": {
+                            "type": "boolean",
+                            "default": false,
+                            "title": "The templated Schema",
+                            "examples": [
+                                false
+                            ]
+                        }
+                    },
+                    "examples": [{
+                        "href": "http://localhost:8080/actuator/health",
+                        "templated": false
+                    }]
+                },
+                "info": {
+                    "type": "object",
+                    "default": {},
+                    "title": "The info Schema",
+                    "required": [
+                        "href",
+                        "templated"
+                    ],
+                    "properties": {
+                        "href": {
+                            "type": "string",
+                            "default": "",
+                            "title": "The href Schema",
+                            "examples": [
+                                "http://localhost:8080/actuator/info"
+                            ]
+                        },
+                        "templated": {
+                            "type": "boolean",
+                            "default": false,
+                            "title": "The templated Schema",
+                            "examples": [
+                                false
+                            ]
+                        }
+                    },
+                    "examples": [{
+                        "href": "http://localhost:8080/actuator/info",
+                        "templated": false
+                    }]
+                },
+                "prometheus": {
+                    "type": "object",
+                    "default": {},
+                    "title": "The prometheus Schema",
+                    "required": [
+                        "href",
+                        "templated"
+                    ],
+                    "properties": {
+                        "href": {
+                            "type": "string",
+                            "default": "",
+                            "title": "The href Schema",
+                            "examples": [
+                                "http://localhost:8080/actuator/prometheus"
+                            ]
+                        },
+                        "templated": {
+                            "type": "boolean",
+                            "default": false,
+                            "title": "The templated Schema",
+                            "examples": [
+                                false
+                            ]
+                        }
+                    },
+                    "examples": [{
+                        "href": "http://localhost:8080/actuator/prometheus",
+                        "templated": false
+                    }]
+                },
+                "metrics-requiredMetricName": {
+                    "type": "object",
+                    "default": {},
+                    "title": "The metrics-requiredMetricName Schema",
+                    "required": [
+                        "href",
+                        "templated"
+                    ],
+                    "properties": {
+                        "href": {
+                            "type": "string",
+                            "default": "",
+                            "title": "The href Schema",
+                            "examples": [
+                                "http://localhost:8080/actuator/metrics/{requiredMetricName}"
+                            ]
+                        },
+                        "templated": {
+                            "type": "boolean",
+                            "default": false,
+                            "title": "The templated Schema",
+                            "examples": [
+                                true
+                            ]
+                        }
+                    },
+                    "examples": [{
+                        "href": "http://localhost:8080/actuator/metrics/{requiredMetricName}",
+                        "templated": true
+                    }]
+                },
+                "metrics": {
+                    "type": "object",
+                    "default": {},
+                    "title": "The metrics Schema",
+                    "required": [
+                        "href",
+                        "templated"
+                    ],
+                    "properties": {
+                        "href": {
+                            "type": "string",
+                            "default": "",
+                            "title": "The href Schema",
+                            "examples": [
+                                "http://localhost:8080/actuator/metrics"
+                            ]
+                        },
+                        "templated": {
+                            "type": "boolean",
+                            "default": false,
+                            "title": "The templated Schema",
+                            "examples": [
+                                false
+                            ]
+                        }
+                    },
+                    "examples": [{
+                        "href": "http://localhost:8080/actuator/metrics",
+                        "templated": false
+                    }]
+                }
+            },
+            "examples": [{
+                "self": {
+                    "href": "http://localhost:8080/actuator",
+                    "templated": false
+                },
+                "health-path": {
+                    "href": "http://localhost:8080/actuator/health/{*path}",
+                    "templated": true
+                },
+                "health": {
+                    "href": "http://localhost:8080/actuator/health",
+                    "templated": false
+                },
+                "info": {
+                    "href": "http://localhost:8080/actuator/info",
+                    "templated": false
+                },
+                "prometheus": {
+                    "href": "http://localhost:8080/actuator/prometheus",
+                    "templated": false
+                },
+                "metrics-requiredMetricName": {
+                    "href": "http://localhost:8080/actuator/metrics/{requiredMetricName}",
+                    "templated": true
+                },
+                "metrics": {
+                    "href": "http://localhost:8080/actuator/metrics",
+                    "templated": false
+                }
+            }]
+        }
+    },
+    "examples": [{
+        "_links": {
+            "self": {
+                "href": "http://localhost:8080/actuator",
+                "templated": false
+            },
+            "health-path": {
+                "href": "http://localhost:8080/actuator/health/{*path}",
+                "templated": true
+            },
+            "health": {
+                "href": "http://localhost:8080/actuator/health",
+                "templated": false
+            },
+            "info": {
+                "href": "http://localhost:8080/actuator/info",
+                "templated": false
+            },
+            "prometheus": {
+                "href": "http://localhost:8080/actuator/prometheus",
+                "templated": false
+            },
+            "metrics-requiredMetricName": {
+                "href": "http://localhost:8080/actuator/metrics/{requiredMetricName}",
+                "templated": true
+            },
+            "metrics": {
+                "href": "http://localhost:8080/actuator/metrics",
+                "templated": false
+            }
+        }
+    }]
+}

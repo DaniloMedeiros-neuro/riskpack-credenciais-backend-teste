@@ -1,0 +1,9 @@
+ENDPOINT_PROMETHEUS_LIST:
+  PARAMETER:
+    NAME_METRICS: "process.start.time"
+    NAME_METRICS_INVALID: "testeAutomacao"
+  PATH: /actuator
+  PATH_HEALTH: /actuator/health
+  PATH_INFO: /actuator/info
+  PATH_PROMETHEUS: /actuator/prometheus
+  PATH_METRICS: /actuator/metrics

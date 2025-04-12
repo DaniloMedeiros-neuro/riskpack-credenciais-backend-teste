@@ -1,0 +1,207 @@
+BODY_CONSULTA:
+  EM_BRANCO:
+    id: null
+  INEXISTENTE:
+    id: TESTEQAAUTOMAÇAO
+  REPETIDO:
+    id: ABRTELECOM
+  SUCESSO:
+    id: CNSEGBDRF
+  SUCESSO_RASCUNHO:
+    id: TESTE_AUTOMACAO_BACK_CONSULTA_Z1C_D
+  SUCESSO_RASCUNHO_2:
+    id: TESTE_AUTOMACAO_BACK_CONSULTA_Z1C_D2
+  VAZIO: null
+BODY_CONSULTA_DESENVOLVIMENTO:
+  CODIGO_DO_CLIENTE_ATE_5:
+    campo1:
+      nome: accountClient
+      valor: 1234
+  CODIGO_DO_CLIENTE_CARACTERES_ESPECIAIS:
+    campo1:
+      nome: accountClient
+      valor: +@!-#%*)(
+  CODIGO_DO_CLIENTE_CONTA_1:
+    campo1:
+      nome: accountClient
+      valor: 1
+  CODIGO_DO_CLIENTE_LETRAS:
+    campo1:
+      nome: accountClient
+      valor: ABCDEáéíóúç
+  CODIGO_DO_CLIENTE_MAIOR_QUE_5:
+    campo1:
+      nome: accountClient
+      valor: 123456
+  CODIGO_DO_CLIENTE_NEGATIVO:
+    campo1:
+      nome: accountClient
+      valor: -123
+  CODIGO_DO_CLIENTE_VAZIO:
+    campo1:
+      nome: accountClient
+      valor: null
+  CODIGO_DO_CLIENTE_ZERO:
+    campo1:
+      nome: accountClient
+      valor: 0
+  DESCRICAO_CARACTERES_ESPECIAIS:
+    campo1:
+      nome: descriptionGateway
+      valor: ÁÉÇFFÃ+@!-#%*)(áéíóúç 1234567890
+  DESCRICAO_ESPACO_EM_BRANCO:
+    campo1:
+      nome: descriptionGateway
+      valor: Officiis       dicta
+  DESCRICAO_MAIOR_50_CARACTERES:
+    campo1:
+      nome: descriptionGateway
+      valor: Officiis dicta minima vel alias quidem nobis Voluptate quas officiis
+        eum sint testando
+  DESCRICAO_VAZIA:
+    campo1:
+      nome: descriptionGateway
+      valor: null
+  ENTRADAS_VAZIAS:
+    campo1:
+      nome: inputs
+      valor: []
+  ENTRADA_DA_CONSULTA_CARACTERES_ESPECIAIS:
+    campo1:
+      nome: inputs
+      valor:
+      - ÉÁÇFFÃ+@!
+      - $%*+
+  ENTRADA_DA_CONSULTA_MAIOR_10_ITENS:
+    campo1:
+      nome: inputs
+      valor:
+      - TESTE 1
+      - TESTE 2
+      - TESTE 3
+      - TESTE 4
+      - TESTE 5
+      - TESTE 6
+      - TESTE 7
+      - TESTE 8
+      - TESTE 9
+      - TESTE 10
+      - TESTE 11
+      - TESTE 12
+      - TESTE 13
+      - TESTE 14
+      - TESTE 15
+  ENTRADA_DA_CONSULTA_MAIOR_50_CARACTERES:
+    campo1:
+      nome: inputs
+      valor:
+      - Officiis dicta minima vel alias quidem nobis Voluptate quas officiis eum sin
+        testando
+      - OIt was popularised in the 1960s with the release of Letraset sheets containing
+        Lorem Ipsum passages
+  NOME_CARACTERES_ESPECIAIS:
+    campo1:
+      nome: nameGateway
+      valor: ÉÁÇFFÃ+@!-#%*)(áéíóúç
+  NOME_ESPACO_EM_BRANCO:
+    campo1:
+      nome: nameGateway
+      valor: NOME CONSULTA COM ESPACO EM BRANCO
+  NOME_JA_EXISTENTE_DESENVOLVIMENTO:
+    campo1:
+      nome: nameGateway
+      valor: CONSULTA_1
+  NOME_JA_EXISTENTE_GATEWAY:
+    campo1:
+      nome: nameGateway
+      valor: ABRTELECOM
+  NOME_MAIOR_50_CARACTERES:
+    campo1:
+      nome: nameGateway
+      valor: TESTE_AUTOMACAO_BACK_CONSULTA_COM_MAIS_DE_50_CARACTERES
+  NOME_MINUSCULO:
+    campo1:
+      nome: nameGateway
+      valor: teste_com_nome_DE_CONSULTA_minusculo
+  NOME_VAZIO:
+    campo1:
+      nome: nameGateway
+      valor: null
+  SEM_O_CAMPO_CODIGO:
+    descriptionGateway: TESTE SEM O CAMPO
+    inputs:
+    - TESTE
+    nameGateway: TESTE_AUTOMACAO_BACK_CONSULTA_R6C55G3BKG
+  SEM_O_CAMPO_DESCRICAO:
+    accountClient: 12345
+    inputs:
+    - TESTE
+    nameGateway: TESTE_AUTOMACAO_BACK_CONSULTA_R6C55G3BKG
+  SEM_O_CAMPO_ENTRADA:
+    accountClient: 12345
+    descriptionGateway: TESTE SEM O CAMPO
+    nameGateway: TESTE_AUTOMACAO_BACK_CONSULTA_R6C55G3BKG
+  SEM_O_CAMPO_NOME:
+    accountClient: 12345
+    descriptionGateway: TESTE SEM O CAMPO
+    inputs:
+    - TESTE
+  SUCESSO:
+    accountClient: 5197
+    descriptionGateway: Delectus culpa eveniet praesentium nisi
+    inputs:
+    - TESTE_ENTRADA_006397
+    - TESTE_ENTRADA_754754
+    nameGateway: TESTE_AUTOMACAO_BACK_CONSULTA_Z1C_D
+  SUCESSO_RASCUNHO:
+    accountClient: 654
+    descriptionGateway: Delectus culpa eveniet praesentium nisi
+    inputs:
+    - TESTE_ENTRADA_006397
+    - TESTE_ENTRADA_754754
+    nameGateway: TESTE_AUTOMACAO_BACK_CONSULTA_Z1C_D
+  SUCESSO_RASCUNHO_2:
+    accountClient: 654
+    descriptionGateway: Quae dolorum sequi
+    inputs:
+    - TESTE_ENTRADA_506677
+    - TESTE_ENTRADA_307354
+    nameGateway: TESTE_AUTOMACAO_BACK_CONSULTA_Z1C_D2
+ENDPOINT_CONSULTAS:
+  PARAMETER:
+    PAGE: 0
+    PAGE_EMPTY: EMPTY
+    PAGE_INVALID: abc
+    PAGE_MAIOR: 10
+    SIZE: 100
+    SIZE_EMPTY: EMPTY
+    SIZE_INVALID: abc
+  PATH: api/v1/gateway/query
+  PATH_DESENVOLVIMENTO: /api/v1/draft
+  PATH_PORTFOLIO: /api/v1/gateway/portfolio
+  QUERYID:
+    COMPARTILHADA: ABRTELECOM
+    CREDENCIAL:
+      PARAMETER:
+        DIRECTION:
+        - ASC
+        - DESC
+        - EMPTY
+        - null
+        - TESTEQAAUTOMACAO
+        FIELD:
+        - DESCRIPTION
+        - ENV
+        - STATUS
+        - EMPTY
+        - null
+        - TESTEQAAUTOMACAO
+        QUERYID: JFSP
+        QUERYID_COM_CREDENCIAIS: 4619155837055593
+        QUERYID_CONSULTA_RASCUNHO: 1234
+        QUERYID_CREDENCIAL_INEXISTENTE: 8386521719412345
+        QUERYID_SEM_CREDENCIAIS: 3817456236280351
+        QUERYID_VAZIO: '   '
+    INEXISTENTE: TESTEQAAUTOMACAO
+    INVALIDO: .+-*$&
+    SUCESSO: CNSEGBDRF

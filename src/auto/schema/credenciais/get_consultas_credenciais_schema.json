@@ -1,0 +1,318 @@
+{
+    "$schema": "https://json-schema.org/draft/2019-09/schema",
+    "$id": "http://example.com/example.json",
+    "type": "object",
+    "default": {},
+    "title": "Root Schema",
+    "required": [
+        "TotalElements",
+        "CredentialsList"
+    ],
+    "properties": {
+        "TotalElements": {
+            "type": "integer",
+            "default": 0,
+            "title": "The TotalElements Schema",
+            "examples": [
+                5
+            ]
+        },
+        "CredentialsList": {
+            "type": "array",
+            "default": [],
+            "title": "The CredentialsList Schema",
+            "items": {
+                "type": "object",
+                "title": "A Schema",
+                "required": [
+                    "Id",
+                    "Name",
+                    "Description",
+                    "Status",
+                    "CreatedBy",
+                    "Created",
+                    "UpdatedBy",
+                    "Updated",
+                    "CreateUserName",
+                    "UpdateUserName"
+                ],
+                "properties": {
+                    "Id": {
+                        "type": "string",
+                        "title": "The Id Schema",
+                        "examples": [
+                            "3512857204735165",
+                            "1164838732819638",
+                            "8901450822764098",
+                            "2644496738929592",
+                            "5320808717750064"
+                        ]
+                    },
+                    "Name": {
+                        "type": "string",
+                        "title": "The Name Schema",
+                        "examples": [
+                            "TESTE_AUTOMACAO_BACK_U9AFCABFQC0F8BN_HCPYE_BFQIRB6",
+                            "TESTE_AUTOMACAO_BACK_SE8UI64I17EOADOYJ10CJ7HK",
+                            "NOME_CREDENCIAL_COM_UNDERLINE_211265",
+                            "NOME_CREDENCIAL_COM_UNDERLINE_871440",
+                            "TESTE_AUTOMACAO_BACK_A41T8XNMSS2DJXZGPC5K_4"
+                        ]
+                    },
+                    "Description": {
+                        "type": "string",
+                        "title": "The Description Schema",
+                        "examples": [
+                            "Accusamus pariatur quisquam deleniti",
+                            "Descricao invalida!@#$%\u0026*",
+                            "Mollitia eos molestiae quia",
+                            "Tempore omnis odit voluptatum"
+                        ]
+                    },
+                    "Status": {
+                        "type": "string",
+                        "title": "The Status Schema",
+                        "examples": [
+                            "INACTIVE"
+                        ]
+                    },
+                    "CreatedBy": {
+                        "type": "string",
+                        "title": "The CreatedBy Schema",
+                        "examples": [
+                            "usuario_super_credenciais_autom@mailinator.com"
+                        ]
+                    },
+                    "Created": {
+                        "type": "string",
+                        "title": "The Created Schema",
+                        "examples": [
+                            "2024-08-02T22:20:55.885268",
+                            "2024-08-02T21:51:53.734652",
+                            "2024-08-02T21:54:08.743087",
+                            "2024-08-02T22:10:53.156863",
+                            "2024-08-02T22:08:36.612818"
+                        ]
+                    },
+                    "UpdatedBy": {
+                        "type": "string",
+                        "title": "The UpdatedBy Schema",
+                        "examples": [
+                            "usuario_super_credenciais_autom@mailinator.com"
+                        ]
+                    },
+                    "Updated": {
+                        "type": "string",
+                        "title": "The Updated Schema",
+                        "examples": [
+                            "2024-08-02T22:20:55.971847",
+                            "2024-08-05T13:17:23.414943",
+                            "2024-08-02T21:54:08.834698",
+                            "2024-08-02T22:10:53.243243",
+                            "2024-08-02T22:08:36.701161"
+                        ]
+                    },
+                    "CreateUserName": {
+                        "type": "string",
+                        "title": "The CreateUserName Schema",
+                        "examples": [
+                            "Usuario Super Credenciais Automacao"
+                        ]
+                    },
+                    "UpdateUserName": {
+                        "type": "string",
+                        "title": "The UpdateUserName Schema",
+                        "examples": [
+                            "Usuario Super Credenciais Automacao"
+                        ]
+                    }
+                },
+                "examples": [{
+                    "Id": "3512857204735165",
+                    "Name": "TESTE_AUTOMACAO_BACK_U9AFCABFQC0F8BN_HCPYE_BFQIRB6",
+                    "Description": "Accusamus pariatur quisquam deleniti",
+                    "Status": "INACTIVE",
+                    "CreatedBy": "usuario_super_credenciais_autom@mailinator.com",
+                    "Created": "2024-08-02T22:20:55.885268",
+                    "UpdatedBy": "usuario_super_credenciais_autom@mailinator.com",
+                    "Updated": "2024-08-02T22:20:55.971847",
+                    "CreateUserName": "Usuario Super Credenciais Automacao",
+                    "UpdateUserName": "Usuario Super Credenciais Automacao"
+                },
+                {
+                    "Id": "1164838732819638",
+                    "Name": "TESTE_AUTOMACAO_BACK_SE8UI64I17EOADOYJ10CJ7HK",
+                    "Description": "Descricao invalida!@#$%\u0026*",
+                    "Status": "INACTIVE",
+                    "CreatedBy": "usuario_super_credenciais_autom@mailinator.com",
+                    "Created": "2024-08-02T21:51:53.734652",
+                    "UpdatedBy": "usuario_super_credenciais_autom@mailinator.com",
+                    "Updated": "2024-08-05T13:17:23.414943",
+                    "CreateUserName": "Usuario Super Credenciais Automacao",
+                    "UpdateUserName": "Usuario Super Credenciais Automacao"
+                },
+                {
+                    "Id": "8901450822764098",
+                    "Name": "NOME_CREDENCIAL_COM_UNDERLINE_211265",
+                    "Description": "Mollitia eos molestiae quia",
+                    "Status": "INACTIVE",
+                    "CreatedBy": "usuario_super_credenciais_autom@mailinator.com",
+                    "Created": "2024-08-02T21:54:08.743087",
+                    "UpdatedBy": "usuario_super_credenciais_autom@mailinator.com",
+                    "Updated": "2024-08-02T21:54:08.834698",
+                    "CreateUserName": "Usuario Super Credenciais Automacao",
+                    "UpdateUserName": "Usuario Super Credenciais Automacao"
+                },
+                {
+                    "Id": "2644496738929592",
+                    "Name": "NOME_CREDENCIAL_COM_UNDERLINE_871440",
+                    "Description": "Tempore omnis odit voluptatum",
+                    "Status": "INACTIVE",
+                    "CreatedBy": "usuario_super_credenciais_autom@mailinator.com",
+                    "Created": "2024-08-02T22:10:53.156863",
+                    "UpdatedBy": "usuario_super_credenciais_autom@mailinator.com",
+                    "Updated": "2024-08-02T22:10:53.243243",
+                    "CreateUserName": "Usuario Super Credenciais Automacao",
+                    "UpdateUserName": "Usuario Super Credenciais Automacao"
+                },
+                {
+                    "Id": "5320808717750064",
+                    "Name": "TESTE_AUTOMACAO_BACK_A41T8XNMSS2DJXZGPC5K_4",
+                    "Description": "Tempore omnis odit voluptatum",
+                    "Status": "INACTIVE",
+                    "CreatedBy": "usuario_super_credenciais_autom@mailinator.com",
+                    "Created": "2024-08-02T22:08:36.612818",
+                    "UpdatedBy": "usuario_super_credenciais_autom@mailinator.com",
+                    "Updated": "2024-08-02T22:08:36.701161",
+                    "CreateUserName": "Usuario Super Credenciais Automacao",
+                    "UpdateUserName": "Usuario Super Credenciais Automacao"
+                }]
+            },
+            "examples": [
+                [{
+                    "Id": "3512857204735165",
+                    "Name": "TESTE_AUTOMACAO_BACK_U9AFCABFQC0F8BN_HCPYE_BFQIRB6",
+                    "Description": "Accusamus pariatur quisquam deleniti",
+                    "Status": "INACTIVE",
+                    "CreatedBy": "usuario_super_credenciais_autom@mailinator.com",
+                    "Created": "2024-08-02T22:20:55.885268",
+                    "UpdatedBy": "usuario_super_credenciais_autom@mailinator.com",
+                    "Updated": "2024-08-02T22:20:55.971847",
+                    "CreateUserName": "Usuario Super Credenciais Automacao",
+                    "UpdateUserName": "Usuario Super Credenciais Automacao"
+                },
+                {
+                    "Id": "1164838732819638",
+                    "Name": "TESTE_AUTOMACAO_BACK_SE8UI64I17EOADOYJ10CJ7HK",
+                    "Description": "Descricao invalida!@#$%\u0026*",
+                    "Status": "INACTIVE",
+                    "CreatedBy": "usuario_super_credenciais_autom@mailinator.com",
+                    "Created": "2024-08-02T21:51:53.734652",
+                    "UpdatedBy": "usuario_super_credenciais_autom@mailinator.com",
+                    "Updated": "2024-08-05T13:17:23.414943",
+                    "CreateUserName": "Usuario Super Credenciais Automacao",
+                    "UpdateUserName": "Usuario Super Credenciais Automacao"
+                },
+                {
+                    "Id": "8901450822764098",
+                    "Name": "NOME_CREDENCIAL_COM_UNDERLINE_211265",
+                    "Description": "Mollitia eos molestiae quia",
+                    "Status": "INACTIVE",
+                    "CreatedBy": "usuario_super_credenciais_autom@mailinator.com",
+                    "Created": "2024-08-02T21:54:08.743087",
+                    "UpdatedBy": "usuario_super_credenciais_autom@mailinator.com",
+                    "Updated": "2024-08-02T21:54:08.834698",
+                    "CreateUserName": "Usuario Super Credenciais Automacao",
+                    "UpdateUserName": "Usuario Super Credenciais Automacao"
+                },
+                {
+                    "Id": "2644496738929592",
+                    "Name": "NOME_CREDENCIAL_COM_UNDERLINE_871440",
+                    "Description": "Tempore omnis odit voluptatum",
+                    "Status": "INACTIVE",
+                    "CreatedBy": "usuario_super_credenciais_autom@mailinator.com",
+                    "Created": "2024-08-02T22:10:53.156863",
+                    "UpdatedBy": "usuario_super_credenciais_autom@mailinator.com",
+                    "Updated": "2024-08-02T22:10:53.243243",
+                    "CreateUserName": "Usuario Super Credenciais Automacao",
+                    "UpdateUserName": "Usuario Super Credenciais Automacao"
+                },
+                {
+                    "Id": "5320808717750064",
+                    "Name": "TESTE_AUTOMACAO_BACK_A41T8XNMSS2DJXZGPC5K_4",
+                    "Description": "Tempore omnis odit voluptatum",
+                    "Status": "INACTIVE",
+                    "CreatedBy": "usuario_super_credenciais_autom@mailinator.com",
+                    "Created": "2024-08-02T22:08:36.612818",
+                    "UpdatedBy": "usuario_super_credenciais_autom@mailinator.com",
+                    "Updated": "2024-08-02T22:08:36.701161",
+                    "CreateUserName": "Usuario Super Credenciais Automacao",
+                    "UpdateUserName": "Usuario Super Credenciais Automacao"
+                }]
+            ]
+        }
+    },
+    "examples": [{
+        "TotalElements": 5,
+        "CredentialsList": [{
+            "Id": "3512857204735165",
+            "Name": "TESTE_AUTOMACAO_BACK_U9AFCABFQC0F8BN_HCPYE_BFQIRB6",
+            "Description": "Accusamus pariatur quisquam deleniti",
+            "Status": "INACTIVE",
+            "CreatedBy": "usuario_super_credenciais_autom@mailinator.com",
+            "Created": "2024-08-02T22:20:55.885268",
+            "UpdatedBy": "usuario_super_credenciais_autom@mailinator.com",
+            "Updated": "2024-08-02T22:20:55.971847",
+            "CreateUserName": "Usuario Super Credenciais Automacao",
+            "UpdateUserName": "Usuario Super Credenciais Automacao"
+        },
+        {
+            "Id": "1164838732819638",
+            "Name": "TESTE_AUTOMACAO_BACK_SE8UI64I17EOADOYJ10CJ7HK",
+            "Description": "Descricao invalida!@#$%\u0026*",
+            "Status": "INACTIVE",
+            "CreatedBy": "usuario_super_credenciais_autom@mailinator.com",
+            "Created": "2024-08-02T21:51:53.734652",
+            "UpdatedBy": "usuario_super_credenciais_autom@mailinator.com",
+            "Updated": "2024-08-05T13:17:23.414943",
+            "CreateUserName": "Usuario Super Credenciais Automacao",
+            "UpdateUserName": "Usuario Super Credenciais Automacao"
+        },
+        {
+            "Id": "8901450822764098",
+            "Name": "NOME_CREDENCIAL_COM_UNDERLINE_211265",
+            "Description": "Mollitia eos molestiae quia",
+            "Status": "INACTIVE",
+            "CreatedBy": "usuario_super_credenciais_autom@mailinator.com",
+            "Created": "2024-08-02T21:54:08.743087",
+            "UpdatedBy": "usuario_super_credenciais_autom@mailinator.com",
+            "Updated": "2024-08-02T21:54:08.834698",
+            "CreateUserName": "Usuario Super Credenciais Automacao",
+            "UpdateUserName": "Usuario Super Credenciais Automacao"
+        },
+        {
+            "Id": "2644496738929592",
+            "Name": "NOME_CREDENCIAL_COM_UNDERLINE_871440",
+            "Description": "Tempore omnis odit voluptatum",
+            "Status": "INACTIVE",
+            "CreatedBy": "usuario_super_credenciais_autom@mailinator.com",
+            "Created": "2024-08-02T22:10:53.156863",
+            "UpdatedBy": "usuario_super_credenciais_autom@mailinator.com",
+            "Updated": "2024-08-02T22:10:53.243243",
+            "CreateUserName": "Usuario Super Credenciais Automacao",
+            "UpdateUserName": "Usuario Super Credenciais Automacao"
+        },
+        {
+            "Id": "5320808717750064",
+            "Name": "TESTE_AUTOMACAO_BACK_A41T8XNMSS2DJXZGPC5K_4",
+            "Description": "Tempore omnis odit voluptatum",
+            "Status": "INACTIVE",
+            "CreatedBy": "usuario_super_credenciais_autom@mailinator.com",
+            "Created": "2024-08-02T22:08:36.612818",
+            "UpdatedBy": "usuario_super_credenciais_autom@mailinator.com",
+            "Updated": "2024-08-02T22:08:36.701161",
+            "CreateUserName": "Usuario Super Credenciais Automacao",
+            "UpdateUserName": "Usuario Super Credenciais Automacao"
+        }]
+    }]
+}

@@ -1,0 +1,9 @@
+robotframework
+robotframework-requests
+PyYAML
+robotframework-jsonlibrary
+robotframework-seleniumlibrary
+robotframework-debuglibrary
+robotframework-faker
+DateTime
+allure-robotframework
