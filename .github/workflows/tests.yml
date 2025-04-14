@@ -1,4 +1,4 @@
-name: Run Tests and Publish Allure Report
+name: Run Robot Tests and Publish Allure Report
 
 on: [push, pull_request]
 
@@ -7,7 +7,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - name: Checkout
+    - name: Checkout repository
       uses: actions/checkout@v3
 
     - name: Setup Python
@@ -20,19 +20,23 @@ jobs:
         pip install -r requirements.txt
         npm install -g allure-commandline
 
-    - name: Install Allure-RobotFramework adapter
+    - name: Run Robot Framework Tests with Allure Listener
       run: |
-        pip install robotframework
-        robot --listener "allure_robotframework;ALLURE_RESULTS_DIR=allure-result" \
-        --test "*CREDT-172*" \
-        --test "*CREDT-274*" \
-        tests/features
+        robot \
+          --listener "allure_robotframework;ALLURE_RESULTS_DIR=allure-result" \
+          --include regression \
+          tests/features
+
+    - name: Debug - Show Allure result files
+      run: |
+        echo "📂 Conteúdo da pasta allure-result:"
+        ls -l allure-result || echo "⚠️ Pasta não encontrada ou vazia."
 
     - name: Generate Allure Report with customizations
       run: |
         project_root="$(pwd)"
         output_folder="${project_root}/allure-report"
-        results_folder="${project_root}/allure-result"  # <- aqui estava errado, era "allure-results"
+        results_folder="${project_root}/allure-result"
         custom_styles_path="${project_root}/allure-custom/styles.css"
         logo_source_path="${project_root}/allure-custom/neuro-logo.svg"
         favicon_source_path="${project_root}/allure-custom/favicon.ico"
@@ -43,14 +47,12 @@ jobs:
         allure generate "$results_folder" --clean --lang br -o "$output_folder"
 
         if [ ! -f "$output_folder/index.html" ]; then
-          echo "❌ Relatório não foi gerado!"
+          echo "❌ Erro ao gerar o relatório Allure."
           exit 1
         fi
 
-        if [ -f "$custom_styles_path" ]; then
-          cp "$custom_styles_path" "$output_folder/custom.css"
-          sed -i '/styles.css/a <link rel="stylesheet" type="text/css" href="custom.css">' "$output_folder/index.html"
-        fi
+        cp "$custom_styles_path" "$output_folder/custom.css"
+        sed -i '/styles.css/a <link rel="stylesheet" type="text/css" href="custom.css">' "$output_folder/index.html"
 
         sed -i 's|<title>Allure Report</title>|<title>Neuro Report</title>|' "$output_folder/index.html"
 
@@ -59,26 +61,19 @@ jobs:
           sed -i 's/Allure Report/Neuro Report/g' "$summary_file"
         fi
 
-        if [ -f "$logo_source_path" ]; then
-          mkdir -p "$logo_target_folder"
-          cp "$logo_source_path" "$logo_target_folder/neuro-logo.svg"
+        mkdir -p "$logo_target_folder"
+        cp "$logo_source_path" "$logo_target_folder/neuro-logo.svg"
+
+        cp "$favicon_source_path" "$favicon_target_path"
+        if grep -q '<link rel="icon"' "$output_folder/index.html"; then
+          sed -i 's|<link rel="icon[^>]*>|<link rel="icon" type="image/x-icon" href="favicon.ico">|' "$output_folder/index.html"
+        else
+          sed -i '/<head>/a <link rel="icon" type="image/x-icon" href="favicon.ico">' "$output_folder/index.html"
         fi
 
-        if [ -f "$favicon_source_path" ]; then
-          cp "$favicon_source_path" "$favicon_target_path"
-          if grep -q '<link rel="icon"' "$output_folder/index.html"; then
-            sed -i 's|<link rel="icon[^>]*>|<link rel="icon" type="image/x-icon" href="favicon.ico">|' "$output_folder/index.html"
-          else
-            sed -i '/<head>/a <link rel="icon" type="image/x-icon" href="favicon.ico">' "$output_folder/index.html"
-          fi
-        fi
-    - name: List contents
-      run: |
-        ls -la
-        ls -la allure-result || echo "Allure results folder not found"
-        - name: Deploy Allure Report to GitHub Pages
-          uses: peaceiris/actions-gh-pages@v3
-          with:
-            github_token: ${{ secrets.GITHUB_TOKEN }}
-            publish_dir: allure-report
-            publish_branch: gh-pages
+    - name: Deploy Allure Report to GitHub Pages
+      uses: peaceiris/actions-gh-pages@v3
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        publish_dir: allure-report
+        publish_branch: gh-pages
