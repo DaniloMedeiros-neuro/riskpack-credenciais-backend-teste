@@ -22,10 +22,7 @@ jobs:
 
     - name: Run Robot Framework Tests with Allure Listener
       run: |
-        robot \
-          --listener "allure_robotframework;ALLURE_RESULTS_DIR=allure-result" \
-          --include regression \
-          tests/features
+        robot --listener "allure_robotframework;ALLURE_RESULTS_DIR=allure-result" --test "CREDT-172" tests/features
 
     - name: Debug - Show Allure result files
       run: |
