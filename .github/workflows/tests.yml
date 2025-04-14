@@ -22,7 +22,6 @@ jobs:
 
     - name: Install Allure-RobotFramework adapter
       run: |
-
         pip install robotframework robotframework-allure
 
 #        robot --listener "allure_robotframework;allure-result" --include regression tests/features || true
