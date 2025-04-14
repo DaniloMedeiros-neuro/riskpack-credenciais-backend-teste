@@ -30,6 +30,12 @@ jobs:
         echo "📂 Conteúdo da pasta allure-result:"
         ls -l allure-result || echo "⚠️ Pasta não encontrada ou vazia."
 
+    - name: Clear Allure cache
+      run: |
+        echo "🧹 Limpando pastas allure-result e allure-report"
+        rm -rf allure-result allure-report
+        mkdir -p allure-result
+
     - name: Generate Allure Report with customizations
       run: |
         project_root="$(pwd)"
