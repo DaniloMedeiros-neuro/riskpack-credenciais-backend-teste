@@ -22,7 +22,8 @@ jobs:
 
     - name: Install Allure-RobotFramework adapter
       run: |
-        pip install robotframework robotframework-allure
+        pip install robotframework
+        pip install git+https://github.com/kirkpeter/robotframework-allure.git
         robot --listener "allure_robotframework;allure-result" --test "*CREDT-172*" --test "*CREDT-274*" tests/features
 
     - name: Generate Allure Report with customizations
