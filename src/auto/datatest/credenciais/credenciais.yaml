@@ -27,7 +27,7 @@ BODY_CREDENCIAL:
   DESCRICAO_DIFERENTE:
     campo1:
       nome: Description
-      valor: DESCRICAO DE TESTE AUTOMACAO CREDENCIAIS 539999
+      valor: DESCRICAO DE TESTE AUTOMACAO CREDENCIAIS 973053
   DESCRICAO_ESPACOS_EM_BRANCO:
     campo1:
       nome: Description
@@ -117,8 +117,8 @@ BODY_CREDENCIAL:
       Value: ''
     - Name: telefone
       Value: teste1234
-    - Name: Arthur Rios
-      Value: Arthur Rios
+    - Name: Julia Alves
+      Value: Julia Alves
   ENTRADA_VAZIA:
     Description: Fugit culpa doloribus Adipisci facere totam
     Inputs: null
@@ -127,11 +127,11 @@ BODY_CREDENCIAL:
   NOME_ALEATORIO:
     campo1:
       nome: Name
-      valor: TESTE_AUTOMACAO_BACK_EXCLUSAO_657025
+      valor: TESTE_AUTOMACAO_BACK_EXCLUSAO_206647
   NOME_ALEATORIO_COLISAO:
     campo1:
       nome: Name
-      valor: TESTE_AUTOMACAO_BACK_COLISAO_514682
+      valor: TESTE_AUTOMACAO_BACK_COLISAO_346542
   NOME_CREDENCIAL_COMECANDO_COM_NUMEROS:
     campo1:
       nome: Name
@@ -155,7 +155,7 @@ BODY_CREDENCIAL:
   NOME_CREDENCIAL_COM_UNDERLINE:
     campo1:
       nome: Name
-      valor: NOME_CREDENCIAL_COM_UNDERLINE_539999
+      valor: NOME_CREDENCIAL_COM_UNDERLINE_973053
   NOME_CREDENCIAL_ESPACOS:
     campo1:
       nome: Name
@@ -219,44 +219,44 @@ BODY_CREDENCIAL:
       Value: 995623414
     QueryName: ABRTELECOM
   SUCESSO:
-    Description: Natus odit possimus labore
+    Description: Odio voluptatibus ipsa quisquam
     Inputs:
     - Name: ddd
-      Value: 28
+      Value: 56
     - Name: telefone
-      Value: 0300-520-3856
-    Name: TESTE_AUTOMACAO_BACK_BYAPAEY__XYVLFRLAIO1MJXEL
+      Value: (041) 5858 8866
+    Name: TESTE_AUTOMACAO_BACK_8BTSS2Q6O9AOWY06DE92M8
     QueryName: ABRTELECOM
   SUCESSO_COLISAO:
     Description: Credencial criada para colisao pela automacao
     Inputs:
     - Name: cep
-      Value: 36376-084
+      Value: '55805480'
     Name: TESTE_AUTOMACAO_BACK_COLISAO_123
     QueryName: APONTADOR
   SUCESSO_COMPARTILHAMENTO:
-    credentialId: '5490626330065675'
+    credentialId: '8245843210687376'
     dateFinal: '2026-02-20'
     qtdSubmissions: 99
     stopShared: 'false'
   SUCESSO_CRIAR_COMPARTILHAR:
-    Description: Delectus culpa eveniet praesentium nisi
+    Description: Fuga quo sed reprehenderit
     Inputs:
-    - Name: TESTE_ENTRADA_006397
+    - Name: TESTE_ENTRADA_787822
       Value: '123'
-    - Name: TESTE_ENTRADA_754754
+    - Name: TESTE_ENTRADA_125824
       Value: '456'
-    Name: TESTE_AUTOMACAO_BACK_COMPARTILHAR_5197
-    QueryName: TESTE_AUTOMACAO_BACK_CONSULTA_Z1C_D
+    Name: TESTE_AUTOMACAO_BACK_COMPARTILHAR_58719
+    QueryName: TESTE_AUTOMACAO_BACK_CONSULTA_MRVRLS_YNO
   SUCESSO_CRIAR_COMPARTILHAR_1:
-    Description: Delectus culpa eveniet praesentium nisi
+    Description: Fuga quo sed reprehenderit
     Inputs:
-    - Name: TESTE_ENTRADA_006397
+    - Name: TESTE_ENTRADA_787822
       Value: '123'
-    - Name: TESTE_ENTRADA_754754
+    - Name: TESTE_ENTRADA_125824
       Value: '456'
-    Name: TESTE_AUTOMACAO_BACK_COMPARTILHAR_51975197
-    QueryName: TESTE_AUTOMACAO_BACK_CONSULTA_Z1C_D
+    Name: TESTE_AUTOMACAO_BACK_COMPARTILHAR_5871958719
+    QueryName: TESTE_AUTOMACAO_BACK_CONSULTA_MRVRLS_YNO
   SUCESSO_CRIAR_COMPARTILHAR_2:
     Description: Inventore rem qui suscipit iste blanditiis
     Inputs:
@@ -267,12 +267,12 @@ BODY_CREDENCIAL:
     Name: TESTE_AUTOMACAO_BACK_COMPARTILHAR_45779
     QueryName: TESTE_AUTOMACAO_BACK_CONSULTA_RML1UG3HLI0V9
   SUCESSO_EDICAO:
-    Description: Natus odit possimus labore
+    Description: Odio voluptatibus ipsa quisquam
     Inputs:
     - Name: ddd
-      Value: 28
+      Value: 56
     - Name: telefone
-      Value: 0300-520-3856
+      Value: (041) 5858 8866
   SUCESSO_EXCLUSAO:
     Description: Credencial criada para ser excluida pela automacao
     Inputs:
@@ -389,11 +389,11 @@ BODY_CREDENCIAL_COMPARTILHAR:
   QUERYNAME_SUCESSO:
     campo1:
       nome: QueryName
-      valor: TESTE_AUTOMACAO_BACK_CONSULTA_Z1C_D
+      valor: TESTE_AUTOMACAO_BACK_CONSULTA_MRVRLS_YNO
   QUERYNAME_SUCESSO_2:
     campo1:
       nome: QueryName
-      valor: TESTE_AUTOMACAO_BACK_CONSULTA_Z1C_D2
+      valor: TESTE_AUTOMACAO_BACK_CONSULTA_MRVRLS_YNO2
   STOP_SHARED:
     credentialId: '8725734433343324'
     dateFinal: 25-06-2026
@@ -412,7 +412,7 @@ BODY_CREDENCIAL_COMPARTILHAR:
 ENDPOINT_CREDENCIAL:
   CREDTID:
     INVALIDO: '123456789'
-    SUCESSO: '1331145932254261'
+    SUCESSO: '7352322312826321'
     VAZIO: null
   CREDTID_COLISAO:
     SUCESSO: '4949752515854314'
@@ -422,10 +422,10 @@ ENDPOINT_CREDENCIAL:
     CONSULTA: APONTADOR
     CONSULTA_COM_CREDENCIAL_ATIVA: ABRTELECOM
     INVALIDO: '123456789'
-    SUCESSO: '5417147547888695'
+    SUCESSO: '2090948817246878'
     VAZIO: null
   NAME_CREDENTIAL:
-    COMPARTILHADA: TESTE_2
+    COMPARTILHADA: TESTE_AUTOMACAO_FRONT_C0FVD404VV956HAXB41UI4W4P
     NAO_COMPARTILHADA: ABRTELECOM
     VAZIO: null
   PARAMETER:

@@ -138,10 +138,10 @@ BODY_CREDENCIAL_FILTER:
   SUCESSO_COMPARTILHAR:
     Filter:
       Description: ''
-      Name: TESTE_AUTOMACAO_BACK_COMPARTILHAR_5197
+      Name: TESTE_AUTOMACAO_BACK_COMPARTILHAR_58719
       Status: INACTIVE
       User: Automacao
-    QueryName: TESTE_AUTOMACAO_BACK_CONSULTA_Z1C_D
+    QueryName: TESTE_AUTOMACAO_BACK_CONSULTA_MRVRLS_YNO
   SUCESSO_EXCLUSAO:
     Filter:
       Description: Credencial criada para ser excluida pela automacao
