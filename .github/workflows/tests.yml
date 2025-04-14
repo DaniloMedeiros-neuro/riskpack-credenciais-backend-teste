@@ -22,7 +22,7 @@ jobs:
 
     - name: Run tests and collect Allure results (continue on failure)
       run: |
-        robot --include regression tests/features || echo "⚠️ Alguns testes falharam"
+        robot --outputdir allure-results --include regression tests/features || echo "⚠️ Alguns testes falharam"
 
     - name: Generate Allure Report
       run: |
