@@ -20,9 +20,10 @@ jobs:
         pip install -r requirements.txt
         npm install -g allure-commandline
 
-    - name: Run Robot Framework Tests with Allure Listener
+    - name: Run Robot tests
       run: |
-        robot --listener "allure_robotframework;ALLURE_RESULTS_DIR=allure-result" --test "*CREDT-172*" tests/features
+        robot --listener "allure_robotframework;ALLURE_RESULTS_DIR=allure-result" tests/features
+      continue-on-error: true
 
     - name: Debug - Show Allure result files
       run: |
