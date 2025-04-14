@@ -3,7 +3,7 @@
 # Caminhos base
 project_root="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
 output_folder="${project_root}/allure-report"
-results_folder="${project_root}/allure-results"
+results_folder="${project_root}/allure-result"
 custom_styles_path="${project_root}/allure-custom/styles.css"
 logo_source_path="${project_root}/allure-custom/neuro-logo.svg"
 favicon_source_path="${project_root}/allure-custom/favicon.ico"
