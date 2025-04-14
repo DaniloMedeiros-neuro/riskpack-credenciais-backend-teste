@@ -24,31 +24,49 @@ jobs:
       run: |
         robot --outputdir allure-results --include regression tests/features || echo "⚠️ Alguns testes falharam"
 
-    - name: Generate Allure Report
+    - name: Generate Allure Report with customizations
       run: |
-        allure generate allure-results -o allure-report --clean --lang br
+        project_root="$(pwd)"
+        output_folder="${project_root}/allure-report"
+        results_folder="${project_root}/allure-results"
+        custom_styles_path="${project_root}/allure-custom/styles.css"
+        logo_source_path="${project_root}/allure-custom/neuro-logo.svg"
+        favicon_source_path="${project_root}/allure-custom/favicon.ico"
 
-    - name: Update title and summary
-      run: |
-        sed -i 's|<title>Allure Report</title>|<title>Neuro Report</title>|' allure-report/index.html
-        if [ -f allure-report/widgets/summary.json ]; then
-          sed -i 's/Allure Report/Neuro Report/g' allure-report/widgets/summary.json
+        logo_target_folder="$output_folder/plugin/custom-logo"
+        favicon_target_path="$output_folder/favicon.ico"
+
+        allure generate "$results_folder" --clean --lang br -o "$output_folder"
+
+        if [ ! -f "$output_folder/index.html" ]; then
+          echo "❌ Relatório não foi gerado!"
+          exit 1
         fi
 
-    - name: Apply custom styles
-      run: |
-        cp allure-custom/styles.css allure-report/custom.css
-        sed -i '/styles.css/a <link rel="stylesheet" type="text/css" href="custom.css">' allure-report/index.html
+        if [ -f "$custom_styles_path" ]; then
+          cp "$custom_styles_path" "$output_folder/custom.css"
+          sed -i '/styles.css/a <link rel="stylesheet" type="text/css" href="custom.css">' "$output_folder/index.html"
+        fi
 
-    - name: Copy logo and favicon
-      run: |
-        mkdir -p allure-report/plugin/custom-logo
-        cp allure-custom/neuro-logo.svg allure-report/plugin/custom-logo/neuro-logo.svg
-        cp allure-custom/favicon.ico allure-report/favicon.ico
-        if grep -q '<link rel="icon"' allure-report/index.html; then
-          sed -i 's|<link rel="icon[^>]*>|<link rel="icon" type="image/x-icon" href="favicon.ico">|' allure-report/index.html
-        else
-          sed -i '/<head>/a <link rel="icon" type="image/x-icon" href="favicon.ico">' allure-report/index.html
+        sed -i 's|<title>Allure Report</title>|<title>Neuro Report</title>|' "$output_folder/index.html"
+
+        summary_file="$output_folder/widgets/summary.json"
+        if [ -f "$summary_file" ]; then
+          sed -i 's/Allure Report/Neuro Report/g' "$summary_file"
+        fi
+
+        if [ -f "$logo_source_path" ]; then
+          mkdir -p "$logo_target_folder"
+          cp "$logo_source_path" "$logo_target_folder/neuro-logo.svg"
+        fi
+
+        if [ -f "$favicon_source_path" ]; then
+          cp "$favicon_source_path" "$favicon_target_path"
+          if grep -q '<link rel="icon"' "$output_folder/index.html"; then
+            sed -i 's|<link rel="icon[^>]*>|<link rel="icon" type="image/x-icon" href="favicon.ico">|' "$output_folder/index.html"
+          else
+            sed -i '/<head>/a <link rel="icon" type="image/x-icon" href="favicon.ico">' "$output_folder/index.html"
+          fi
         fi
 
     - name: Deploy Allure Report to GitHub Pages
