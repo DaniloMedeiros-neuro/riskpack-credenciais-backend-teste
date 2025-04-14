@@ -21,7 +21,7 @@ jobs:
         npm install -g allure-commandline
     - name: Run Robot Framework Tests with Allure Listener
       run: |
-        robot --listener "allure_robotframework;ALLURE_RESULTS_DIR=allure-result" --test "*CREDT-172*" tests/features
+        robot --listener "allure_robotframework;ALLURE_RESULTS_DIR=allure-result" tests/features
     - name: Debug - Show Allure result files
       run: |
         echo "📂 Conteúdo da pasta allure-result:"
