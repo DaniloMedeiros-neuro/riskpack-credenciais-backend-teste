@@ -23,13 +23,16 @@ jobs:
     - name: Install Allure-RobotFramework adapter
       run: |
         pip install robotframework
-        robot --listener "allure_robotframework;allure-result" --test "*CREDT-172*" --test "*CREDT-274*" tests/features
+        robot --listener "allure_robotframework;ALLURE_RESULTS_DIR=allure-result" \
+        --test "*CREDT-172*" \
+        --test "*CREDT-274*" \
+        tests/features
 
     - name: Generate Allure Report with customizations
       run: |
         project_root="$(pwd)"
         output_folder="${project_root}/allure-report"
-        results_folder="${project_root}/allure-results"
+        results_folder="${project_root}/allure-result"  # <- aqui estava errado, era "allure-results"
         custom_styles_path="${project_root}/allure-custom/styles.css"
         logo_source_path="${project_root}/allure-custom/neuro-logo.svg"
         favicon_source_path="${project_root}/allure-custom/favicon.ico"
@@ -69,10 +72,13 @@ jobs:
             sed -i '/<head>/a <link rel="icon" type="image/x-icon" href="favicon.ico">' "$output_folder/index.html"
           fi
         fi
-
-    - name: Deploy Allure Report to GitHub Pages
-      uses: peaceiris/actions-gh-pages@v3
-      with:
-        github_token: ${{ secrets.GITHUB_TOKEN }}
-        publish_dir: allure-report
-        publish_branch: gh-pages
+    - name: List contents
+      run: |
+        ls -la
+        ls -la allure-result || echo "Allure results folder not found"
+        - name: Deploy Allure Report to GitHub Pages
+          uses: peaceiris/actions-gh-pages@v3
+          with:
+            github_token: ${{ secrets.GITHUB_TOKEN }}
+            publish_dir: allure-report
+            publish_branch: gh-pages
