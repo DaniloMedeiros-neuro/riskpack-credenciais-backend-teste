@@ -24,9 +24,7 @@ allure-results/
 allure-report/
 
 # Mantém customizações do Allure
-!allure-custom/
-!allure-custom/styles.css
-!allure-custom/report.sh
+!allure-custom/**
 
 # GitHub Pages branch (caso usado localmente)
 gh-pages/
