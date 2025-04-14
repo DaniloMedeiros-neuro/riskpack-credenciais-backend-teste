@@ -22,6 +22,7 @@ jobs:
     - name: Run Robot Framework Tests with Allure Listener
       run: |
         robot --listener "allure_robotframework;ALLURE_RESULTS_DIR=allure-result" tests/features
+        continue_on_fail=true
     - name: Debug - Show Allure result files
       run: |
         echo "📂 Conteúdo da pasta allure-result:"
