@@ -22,13 +22,11 @@ jobs:
 
     - name: Install Allure-RobotFramework adapter
       run: |
+
         pip install robotframework robotframework-allure
 
-    - name: Run tests and collect Allure results (continue on failure)
-      run: |
-        robot --listener allure_robotframework;ALLURE_RESULTS_DIR=allure-results \
-              --outputdir allure-output \
-              --include regression tests/features || echo "⚠️ Alguns testes falharam"
+#        robot --listener "allure_robotframework;allure-result" --include regression tests/features || true
+        robot --listener "allure_robotframework;allure-result" --test "*CREDT-172*" --test "*CREDT-274*" tests/features
 
     - name: Generate Allure Report with customizations
       run: |
